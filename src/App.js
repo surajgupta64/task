@@ -22,6 +22,9 @@ import PT from './components/Clients/PT'
 import Deit from './components/Clients/Diet'
 import ManageStaff from './components/HR/ManageStaff'
 import ClientBiometric from './components/Clients/ClientBiometric'
+import Email from './components/Marketing/Email'
+import Sms from './components/Marketing/Sms'
+import PushNotification from './components/Marketing/PushNotification'
 const App = () => {
   return (
     <>
@@ -119,10 +122,24 @@ const App = () => {
               <ManageStaff />
             </Sidebar>
           } />
-          
           <Route exact path='/clientbiometric/clients' element={
             <Sidebar>
               <ClientBiometric />
+            </Sidebar>
+          } />
+          <Route exact path='/email/marketing' element={
+            <Sidebar>
+              <Email />
+            </Sidebar>
+          } />
+          <Route exact path='/sms/marketing' element={
+            <Sidebar>
+              <Sms />
+            </Sidebar>
+          } />
+          <Route exact path='/pushnotification/marketing' element={
+            <Sidebar>
+              <PushNotification />
             </Sidebar>
           } />
         </Routes>

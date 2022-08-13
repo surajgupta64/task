@@ -20,12 +20,10 @@ main{
   width: 100%;
 }
 .green{
-  background-color: green;
-  color: #fff;
+  color: green;
 }
 .red{
-  background-color: red;
-  color: #fff;
+  color: red;
 }
 .sidebar {
   width: 90px;
@@ -190,12 +188,7 @@ li{
   background-color: rgba(80, 80, 80, 0.568);
   border-radius: 10px;
 }
-.green {
-  color:rgb(19, 187, 19);
-}
-.red{
-  color:rgb(241, 40, 40);
-}
+
 .white{
   color:#fff;
 }
@@ -251,6 +244,14 @@ li{
   height:39px;
 }
 .btn-own1{
+  background-color: green;
+  color: #fff;
+  font-size:15px;
+  width:200px;
+  height:39px;
+}
+.btn-own2{
+  background-color: red;
   color: #fff;
   font-size:15px;
   width:200px;

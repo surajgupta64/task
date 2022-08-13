@@ -29,8 +29,7 @@ const ManageStaff = () => {
         
         <div className="dbox-10">
           <div>
-          <div className="text-center" style={{ fontSize: "23px" }}>
-Biometric Staff Report</div>
+          <div className="text-center" style={{ fontSize: "23px" }}>Biometric Staff Report</div>
           <div className="d-flex justify-content-between">
             <div className="d-flex" style={{ gap: "30px" }}>
               
@@ -141,7 +140,7 @@ Biometric Staff Report</div>
                 S26599
                 </td>
                 <td className="td-3">
-                <button type="button" className={toggle ? "btn btn-own1 green" : "btn btn-own1 red"} onClick={()=>setToggle(!toggle)} >
+                <button type="button" className={toggle ? "btn btn-own1" : "btn btn-own2"} onClick={()=>setToggle(!toggle)} >
                 {toggle?"ON":"OFF"}
                 </button>
                 </td>

@@ -65,6 +65,9 @@ const ClientBiometric = () => {
                 <button className="btn btn-primary">Go</button>
               </div>
             </div>
+            </div> 
+            <br/>
+            <div className="d-flex justify-content-between">
             <div className="d-flex" style={{ gap: "15px" }}>
               <button className="btn btn_enquiry">Export Excel</button>
               <button className="btn btn_enquiry">Staff Report</button>
@@ -72,7 +75,7 @@ const ClientBiometric = () => {
               <button className="btn btn_enquiry">Device List</button>
               <button className="btn btn_enquiry">Access Only Report</button>
             </div>
-          </div>          
+            </div>     
 
           
         </div>

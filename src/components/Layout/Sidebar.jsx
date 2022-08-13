@@ -131,9 +131,9 @@ const Sidebar = ({ children }) => {
                     </Link>
                     <div className={option === 3 ? "options" : "hide"}>
                         <ul className="category-sb">
-                            <li onClick={() => navigate("/all/enquiry")}><b>Email</b></li>
-                            <li onClick={() => navigate("/all/enquiry")}><b>SMS</b></li>
-                            <li onClick={() => navigate("/followups")}><b>Push Notification</b></li>
+                            <li onClick={() => navigate("/email/marketing")}><b>Email</b></li>
+                            <li onClick={() => navigate("/sms/marketing")}><b>SMS</b></li>
+                            <li onClick={() => navigate("/pushnotification/marketing")}><b>Push Notification</b></li>
                             <li onClick={() => navigate("/followups")}><b>Offer</b></li>
                             <li onClick={() => navigate("/followups")}><b>Staff Substitution</b></li>
                             <li onClick={() => navigate("/followups")}><b>Customer Review</b></li>
