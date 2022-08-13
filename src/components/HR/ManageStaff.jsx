@@ -29,7 +29,8 @@ const ManageStaff = () => {
         
         <div className="dbox-10">
           <div>
-          <div className="text-center" style={{ fontSize: "23px" }}>Diet Counselling</div>
+          <div className="text-center" style={{ fontSize: "23px" }}>
+Biometric Staff Report</div>
           <div className="d-flex justify-content-between">
             <div className="d-flex" style={{ gap: "30px" }}>
               
