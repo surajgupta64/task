@@ -35,13 +35,9 @@ const Email = () => {
       <Navbar />
       <div className="page_reducer_1">
         <div className="dbox-10 ">
-          <div className="row">
-            <div className="col-lg-4">
-              <div className="d-flex right mr-3" style={{gap: "30px",fontSize:"20px"}}>
+        <div className="text-center" style={{gap: "30px"}}>
                 Email
               </div>
-            </div>
-          </div>
           <div className="row">
             <div className="col-lg-4">
               <div

@@ -144,13 +144,14 @@ const AllClients = () => {
 
             <div 
             >
-              <button className="btn btn_enquiry">Add to Mailer</button>
+              
+              <button className="btn btn_enquiry " style={{ marginRight: "5px" }} >Add to Mailer</button>
               <button className="btn btn_enquiry">Export Clients</button>
             </div>
           </div>
           <br />
           <div className="d-flex justify-content-between">
-            <div className="d-flex" style={{ gap: "30px" }}>
+            <div className="d-flex" >
               <div className="d-flex align-items-center">
                 <div className="btn-group">
                   <button
