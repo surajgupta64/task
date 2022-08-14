@@ -372,7 +372,11 @@ li Link {
 .padding_reducer {
   padding:0px 5px!important;
 }
-
+.right{
+  margin-top: 15px; 
+  position: relative;
+  float: right;
+}
 .btn_enquiry{
   color: #000;
   border:1px solid #fff;

@@ -35,120 +35,150 @@ const Email = () => {
       <Navbar />
       <div className="page_reducer_1">
         <div className="dbox-10 ">
-          
-        <div className="text-center" style={{ fontSize: "23px" }}>
-              Email
-            </div>
-          <div
-            className="d-flex align-items-center justify-content-center mt-3"
-            style={{ gap: "30px" }}
-          >
-
-            <div className="btn-group">
-              <div className="mr-3">Gateway:</div>
-              <button
-                type="button"
-                className="btn btn-own dropdown-toggle"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                {action1}
-              </button>
-              <div className="dropdown-menu">
-                <a
-                  className="dropdown-item"
-                  href="#"
-                  onClick={() => setAction1("Select SMS Type")}
-                >
-                  Select SMS Type
-                </a>
-                <a
-                  className="dropdown-item"
-                  href="#"
-                  onClick={() => setAction1("Transactional SMS Bal:0")}
-                >
-                  Transactional SMS Bal:0
-                </a>
-                <a
-                  className="dropdown-item"
-                  href="#"
-                  onClick={() => setAction1("Promotional SMS Bal:0")}
-                >
-                  Promotional SMS Bal:0
-                </a>
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="d-flex right mr-3" style={{gap: "30px",fontSize:"20px"}}>
+                Email
               </div>
             </div>
           </div>
-          <br></br>
-          <div
-            className="d-flex align-items-center justify-content-center mt-3"
-            style={{ gap: "30px" }}
-          >
-            <div className="btn-group">
-              <div className="mr-3">Subject:</div>
-              <input
-                type="text"
-                className="btn btn-own"
-                placeholder="Enter Subject"
-              />
-            </div>
-          </div>
-          <br></br>
-          <div
-            className="d-flex align-items-center justify-content-center mt-3"
-            style={{ gap: "30px" }}
-          >
-            <div className="btn-group">
-              <div className="mr-3">SMS Template:</div>
-              <button
-                type="button"
-                className="btn btn-own dropdown-toggle"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+          <div className="row">
+            <div className="col-lg-4">
+              <div
+                className="d-flex right"
+                style={{ gap: "30px" }}
               >
-                {action1}
-              </button>
-              <div className="dropdown-menu">
-                <a
-                  className="dropdown-item"
-                  href="#"
-                  onClick={() => setAction1("Select")}
-                >
-                  Select
-                </a>
-                <a
-                  className="dropdown-item"
-                  href="#"
-                  onClick={() => setAction1("Last Seven Days")}
-                >
-                  Last Seven Days
-                </a>
-                <a
-                  className="dropdown-item"
-                  href="#"
-                  onClick={() => setAction1("Month Till Date")}
-                >
-                  Month Till Date
-                </a>
-                <a
-                  className="dropdown-item"
-                  href="#"
-                  onClick={() => setAction1("Custom Date Range")}
-                >
-                  Custom Date Range
-                </a>
+                <div className="mr-3">Gateway:</div>
               </div>
             </div>
-          </div>
-          <br></br>
+            <div className="col-lg-8">
+              <div className="d-flex mt-3" style={{ gap: "30px" }}>
+                <div className="btn-group">
+                  <button
+                    type="button"
+                    className="btn btn-own dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    {action1}
+                  </button>
+                  <div className="dropdown-menu">
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => setAction1("Select SMS Type")}
+                    >
+                      Select SMS Type
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => setAction1("Transactional SMS Bal:0")}
+                    >
+                      Transactional SMS Bal:0
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => setAction1("Promotional SMS Bal:0")}
+                    >
+                      Promotional SMS Bal:0
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <div
-            className="d-flex align-items-center justify-content-center mt-3"
-            style={{ gap: "30px" }}
-          >
-            <label>
+            <div className="col-lg-4">
+              <div
+                className="d-flex right"
+                style={{ gap: "30px" }}
+              >
+                <div className="mr-3">Subject:</div>
+              </div>
+            </div>
+
+            <div className="col-lg-8">
+              <div className="d-flex mt-3" style={{ gap: "30px" }}>
+                <div className="btn-group">
+                  <input
+                    type="text"
+                    className="btn btn-own"
+                    placeholder="Enter Subject"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-4">
+              <div
+                className="d-flex align-items-center justify-content-center right"
+                style={{ gap: "30px" }}
+              >
+                <div className="mr-3">SMS Template:</div>
+              </div>
+            </div>
+
+            <div className="col-lg-8">
+              <div className="d-flex mt-3" style={{ gap: "30px" }}>
+                <div className="btn-group">
+                  <button
+                    type="button"
+                    className="btn btn-own dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    {action1}
+                  </button>
+                  <div className="dropdown-menu">
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => setAction1("Select")}
+                    >
+                      Select
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => setAction1("Last Seven Days")}
+                    >
+                      Last Seven Days
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => setAction1("Month Till Date")}
+                    >
+                      Month Till Date
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => setAction1("Custom Date Range")}
+                    >
+                      Custom Date Range
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-4">
+              <div
+                className="d-flex align-items-center justify-content-center mt-3"
+                style={{ gap: "30px" }}
+              ></div>
+            </div>
+            
+            <div className="col-lg-8">
+              <div
+                className="d-flex align-items-center justify-content-center mt-3"
+                style={{ gap: "30px" }}
+              >
+                <label>
               <input
                 type="radio"
                 value="All Members"
@@ -197,30 +227,60 @@ const Email = () => {
               />
               <span>Enquiry List </span>
             </label>
+              </div>
+            </div>
+
+
+            <div className="col-lg-4">
+              <div
+                className="d-flex right"
+                style={{ gap: "30px" }}
+              >
+                
+              <div className="mr-3">Message:</div>
+              </div>
+            </div>
+            <div className="col-lg-8">
+              <div
+                className="d-flex  mt-3"
+                style={{ gap: "30px" }}
+              >
+                <div className="btn-group">
+              <textarea
+                style={{ minHeight: "100px", minWidth: "700px" }}
+                placeholder="Type Email"
+              ></textarea>
+            </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div
+                className="d-flex align-items-center justify-content-center mt-3"
+                style={{ gap: "30px" }}
+              >
+                
+              </div>
+            </div>
+            <div className="col-lg-8">
+              <div
+                className="d-flex mt-3"
+                style={{ gap: "30px" }}
+              >
+                
+            <div className="btn-group">
+              <button className="btn btn-primary">Send</button>
+            </div>
+              </div>
+            </div>
+
+
+
+
           </div>
 
-          <br></br>
-          <div
-            className="d-flex align-items-center justify-content-center mt-3"
-            style={{ gap: "30px" }}
-          >
-          <div className="btn-group">
-            <div className="mr-3">Message:</div>
-            <textarea
-              style={{ minHeight: "100px", minWidth: "700px" }}
-              placeholder="Type Email"
-            ></textarea>
-          </div>
+          
+          
         </div>
-        <div
-          className="d-flex align-items-center justify-content-center mt-3"
-          style={{ gap: "30px" }}
-        >
-          <div className="btn-group">
-            <button className="btn btn-primary">Send</button>
-          </div>
-        </div>
-      </div>
       </div>
     </>
   );
