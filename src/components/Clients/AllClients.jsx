@@ -24,15 +24,24 @@ const AllClients = () => {
       <div className="page_reducer_1">
         <div className="dbox-10">
           <div className="text-center" style={{ fontSize: "23px" }}>ALL CLIENTS</div>
-          <div className="d-flex justify-content-between align-items-center">
-          <div className="mr-3">
+          <div className="d-flex justify-content-between">
+            <div className="d-flex" style={{ gap: "30px" }}>
+             
+              <div class="btn-group">
+              <div className="mr-3">
           Total Members : {TotalM}</div>
                 <div className="mr-3">
                 Active Members : {ActiveM}</div>
                 <div className="mr-3">
                 Inactive Members : {InactiveM}</div>
-            <div className="d-flex align-items-center">
-              <div className="mr-3">Filter by:</div>
+              </div>
+            </div>
+          </div>
+          <br/>
+          <div className="d-flex justify-content-between align-items-center">
+          
+          <div className="d-flex" style={{ gap: "30px" }}>
+          <div className="mr-3">Filter by:</div>
               <div className="btn-group">
                 <button type="button" className="btn btn-own dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   {action}
@@ -44,10 +53,7 @@ const AllClients = () => {
                   <a className="dropdown-item" href="#" onClick={() => setAction("Custom Date Range")}>Custom Date Range</a>
                 </div>
               </div>
-            </div>
-
-            <div className="d-flex align-items-center">
-              <div className="mr-3">
+          <div className="mr-3">
                 Sub-filter:</div>
               <div className="btn-group">
                 <button type="button" className="btn btn-own dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -61,8 +67,17 @@ const AllClients = () => {
                 </div>
               </div>
             </div>
+
+            <div className="d-flex" style={{ gap: "20px" }}>
+              
+            <button className="btn btn_enquiry">Add to Mailer</button>
+              <button className="btn btn_enquiry">Export Clients</button>
+            </div>
           </div>
-          <div className="d-flex justify-content-between align-items-center mt-4">
+          <br/>
+          <div className="d-flex justify-content-between">
+           
+            <div className="d-flex" style={{ gap: "30px" }}>
             <div className="d-flex align-items-center">
             <div className="btn-group">
               <button type="button" className="btn btn-own dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -75,6 +90,9 @@ const AllClients = () => {
                 <a className="dropdown-item" href="#" onClick={() => setAction("Custom Date Range")}>Custom Date Range</a>
               </div>
             </div>
+            </div>
+            </div>
+              <div className="d-flex" style={{ gap: "20px" }}>
               <div className="mr-3">
                 Communicate:</div>
               <div className="btn-group">
@@ -88,8 +106,7 @@ const AllClients = () => {
                   <a className="dropdown-item" href="#" onClick={() => setAction("Custom Date Range")}>Custom Date Range</a>
                 </div>
               </div>
-            </div>
-            <div className="d-flex align-itmes-center">
+            
               <div className="mr-3">	Mailer list</div>
               <div className="btn-group">
                 <button type="button" className="btn btn-own dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -102,11 +119,9 @@ const AllClients = () => {
                   <a className="dropdown-item" href="#" onClick={() => setAction("Custom Date Range")}>Custom Date Range</a>
                 </div>
               </div>
-            </div>
-            <div className="d-flex" style={{ gap: "20px" }}>
-              <button className="btn btn_enquiry">Add to Mailer</button>
-              <button className="btn btn_enquiry">Export Clients</button>
-            </div>
+              </div>
+            
+            
           </div>
 
           
