@@ -97,8 +97,8 @@ const Sidebar = ({ children }) => {
                             <li onClick={() => navigate("/pt/clients")}><b>PT Expiry</b></li>
                             <li onClick={() => navigate("/inactive/clients")}><b>Attendance Register</b></li>
                             <li onClick={() => navigate("/clientbiometric/clients")}><b>Client Bio-metric</b></li>
-                            <li onClick={() => navigate("/inactive/clients")}><b>Batches</b></li>
-                            <li onClick={() => navigate("/inactive/clients")}><b>Add Batches</b></li>
+                            <li onClick={() => navigate("/batch/clients")}><b>Batches</b></li>
+                            <li onClick={() => navigate("/addBatch/clients")}><b>Add Batches</b></li>
 
                             <li >
                                 <div className="d-flex justify-content-between">
@@ -171,9 +171,8 @@ const Sidebar = ({ children }) => {
                     </Link>
                     <div className={option === 4 ? "options" : "hide"}>
                         <ul className="category-sb">
-                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/all/enquiry"><b>All Enquiry</b></Link></li>
-                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/all/enquiry"><b>All Enquiry</b></Link></li>
-                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/all/enquiry"><b>All Enquiry</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/all/enquiry"><b>Stock Movement</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/all/enquiry"><b>Product Reorder Alert</b></Link></li>
                         </ul>
                     </div>
                 </div>
@@ -194,9 +193,16 @@ const Sidebar = ({ children }) => {
                     </Link>
                     <div className={option === 5 ? "options" : "hide"}>
                         <ul className="category-sb">
-                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/all/enquiry"><b>All Enquiry</b></Link></li>
-                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/all/enquiry"><b>All Enquiry</b></Link></li>
-                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/all/enquiry"><b>All Enquiry</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/allInvoice/finance"><b>All Invoices</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/paidInvoice/finance"><b>Paid Invoice</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/serviceReceipt/finance"><b>Receipts</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/CancelledInvoice/finance"><b>Cancelled Invoices</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/writtenOff/finance"><b>Written Off Invoices</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/refund/finance"><b>Refund Report</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/revenue/finance"><b>Revenue Realization</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/postpaidRevenue/finance"><b>
+Postpaid Revenue Realisation</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/refund/finance"><b>Refund Report</b></Link></li>
                         </ul>
                     </div>
                 </div>
@@ -217,9 +223,10 @@ const Sidebar = ({ children }) => {
                     </Link>
                     <div className={option === 6 ? "options" : "hide"}>
                         <ul className="category-sb">
-                            <li onClick={() => navigate("/all/enquiry")}><b>Staff Biometric</b></li>
-                            <li onClick={() => navigate("/all/enquiry")}><b>Attendance Registar</b></li>
+                            <li onClick={() => navigate("/staffBiometric/HR")}><b>Staff Biometric</b></li>
+                            <li onClick={() => navigate("/attendanceRegister/HR")}><b>Attendance Register</b></li>
                             <li onClick={() => navigate("/manageStaff/HR")}><b>Manage Staff</b></li>
+                            <li onClick={() => navigate("/staffBirthday/HR")}><b>Staff Birthday</b></li>
                             <li onClick={() => navigate("/followups")}><b>staff Substitution</b></li>
                             <li >
                                 <div className="d-flex justify-content-between">
@@ -252,9 +259,12 @@ const Sidebar = ({ children }) => {
                     </Link>
                     <div className={option === 7 ? "options" : "hide"}>
                         <ul className="category-sb">
-                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/all/enquiry"><b>Attendance</b></Link></li>
-                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/all/enquiry"><b>All Enquiry</b></Link></li>
-                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/all/enquiry"><b>All Enquiry</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/offers/TReports"><b>Offers</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/discount/TReports"><b>Discount Code</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/leadSource/TReports"><b>Lead Source</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/referral/TReports"><b>Referral</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/smsReport/TReports"><b>SMS Report</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/loyalty/TReports"><b>Loyalty Points Usage</b></Link></li>
                         </ul>
                     </div>
                 </div>
@@ -275,9 +285,11 @@ const Sidebar = ({ children }) => {
                     </Link>
                     <div className={option === 8 ? "options" : "hide"}>
                         <ul className="category-sb">
-                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/all/enquiry"><b>All Enquiry</b></Link></li>
-                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/all/enquiry"><b>All Enquiry</b></Link></li>
-                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/all/enquiry"><b>All Enquiry</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/ptDeshboard/training"><b>My PT Dashboard</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/viewExercises/training"><b>Exercise Library</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/workoutTemplates/training"><b>Workout Templates</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/mealPlan/training"><b>Meal Plan Templates</b></Link></li>
+                            <li><Link style={{ textDecoration: "none", color: "#000" }} to="/assessment/training"><b>Assessment Templates</b></Link></li>
                         </ul>
                     </div>
                 </div>

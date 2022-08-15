@@ -30,13 +30,13 @@ const ManageStaff = () => {
         <div className="dbox-10">
           <div>
           <div className="text-center" style={{ fontSize: "23px" }}>Biometric Staff Report</div>
-          <div className="d-flex justify-content-between">
+          <div className="d-flex justify-content-between mt-10">
             <div className="d-flex" style={{ gap: "30px" }}>
               
               
               
-            <div className="btn-group">
             <div className="mr-3">Communicate:</div>
+            <div className="btn-group">
               <button type="button" className="btn btn-own dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 {action1}
               </button>
@@ -48,8 +48,8 @@ const ManageStaff = () => {
               </div>
             </div>
             
-            <div className="btn-group">
             <div className="mr-3">Designation:</div>
+            <div className="btn-group">
               <button type="button" className="btn btn-own dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 {action1}
               </button>
@@ -61,8 +61,8 @@ const ManageStaff = () => {
               </div>
             </div>
             
-            <div className="btn-group">
             <div className="mr-3">Admin Rights:</div>
+            <div className="btn-group">
               <button type="button" className="btn btn-own dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 {action1}
               </button>
