@@ -1,0 +1,31 @@
+table {
+    
+  border-collapse: collapse;
+  border-spacing: 0;
+  
+    width: 100%;
+    margin: 2rem auto;
+  }
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  button{
+    padding: 5px;
+    border-radius: 5px;  
+  color: #000;
+  border:1px solid #fff;
+  background: #fff;
+  font-size:15px;
+  width: 70px auto;
+  }
+  .lebel{
+    color: #fff;
+    text-decoration: underline;
+  }
+  .lebel:hover{
+    cursor: pointer;
+  }
+
+
+tr:nth-child(even){background-color: #57565676}

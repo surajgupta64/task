@@ -14,15 +14,46 @@ import { MdOutlineCheckBoxOutlineBlank, MdOutlineCheckBox, MdOutlineAddBox } fro
 import { AiOutlineMinusSquare, AiOutlineDelete,AiFillEdit } from 'react-icons/ai'
 import {HiOutlinePencilAlt} from 'react-icons/hi'
 import { FiMail } from 'react-icons/fi' 
-import { FaWhatsapp } from 'react-icons/fa'
+import Table from '../Table'
 
 const BiometricStaff = () => {
-  const [toggle, setToggle] = useState(true)  
-  const [action, setAction] = useState('2021')
-  
-  const [action1, setAction1] = useState('August')
-  const [value, onChange] = useState(new Date());
-  const [openCal, setCal] = useState(false);
+
+  const Users = [
+    {
+      "id": 1,
+      "staff_name": "Deepika Shah",
+      "attendance_id": "S25317",
+      "rf_id": "Prabha.y1116@gmail.com",
+      "fingerprint": "F",
+      "active": "ON",
+      "admin_rights": "Super Admin",
+    },
+    {
+      "id": 2,
+      "staff_name": "Deepika Shah",
+      "attendance_id": "S25317",
+      "rf_id": "Prabha.y1116@gmail.com",
+      "fingerprint": "F",
+      "active": "ON",
+      "admin_rights": "Super Admin",
+    },
+  ]
+
+
+  const column = [
+    { heading: 'S.No', value: 'id' },
+    { heading: 'Staff Name', value: 'staff_name' },
+    { heading: 'Attendance ID', value: 'attendance_id' },
+    { heading: 'RF ID', value: 'rf_id' },
+    { heading: 'Fingerprint', value: 'fingerprint' },
+    { heading: 'Active', value: 'active' },
+    { heading: 'Biometric', value:'',btn: 'Resync' },
+    { heading: 'Admin Rights', value: 'admin_rights' },
+    { heading: 'Fingerprint Option',value:'', btn: 'Delete' },
+    
+  ]
+
+
 
   return (
     <>
@@ -32,83 +63,8 @@ const BiometricStaff = () => {
         <div className="dbox-10">
           <div>
           <div className="text-center" style={{ fontSize: "23px" }}>Staff Biometric</div>
-          
-
-      
-
-            <table className="table_client_2" border="1" cellSpacing="0" width="100%">
-              <tr className="tr-client text-center">
-                <td className="td-2">
-                  <div>
-                    <MdOutlineCheckBoxOutlineBlank />
-                  </div>
-                </td>
-                <td className="td-3">
-                  S.No
-                </td>
-                <td className="td-2">
-                Staff Name
-                </td>
-                <td className="td-3">
-                Attendance ID
-                </td>
-                <td className="td-2">
-                RF ID
-                </td>
-                <td className="td-3">
-                Fingerprint
-                </td>
-                <td className="td-2">
-                Active
-                </td>
-                <td className="td-3">
-                Biometric
-                </td>
-                <td className="td-2">
-                Admin Rights
-                </td>
-                <td className="td-3">
-                Fingerprint Option
-                </td>
-              </tr>
-
-              <tr className="tr-client text-center">
-                <td className="td-1">
-                  <div>
-                    <MdOutlineCheckBoxOutlineBlank />
-                  </div>
-                </td>
-                <td className="td-2">
-                1
-                </td>
-                <td className="td-3">
-                Deepika Shah
-                </td>
-                <td className="td-2">
-                S25317
-                </td>
-                <td className="td-3">
-                Prabha.y1116@gmail.com
-                </td>
-                <td className="td-2">
-                F
-                </td>
-                <td className="td-3">
-                ON
-                </td>
-                <td className="td-2">
-            
-                <button className="btn btn_enquiry">Resync</button>
-                </td>
-                <td className="td-3">
-                Super Admin
-                </td>
-                <td className="td-2">
-                
-              <button className="btn btn_enquiry">Delete</button>
-                </td>
-              </tr>
-            </table>
+        
+          <Table data={Users} column={column} />
           </div>
         </div>
       </div>

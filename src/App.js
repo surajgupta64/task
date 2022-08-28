@@ -49,6 +49,9 @@ import WrittenOff from './components/finance/WrittenOff'
 import Refund from './components/finance/Refund'
 import Revenue from './components/finance/Revenue'
 import PostpaidRevenue from './components/finance/PostpaidRevenue'
+import Offer from './components/Marketing/Offer'
+import Unqualified from './components/Marketing/Unqualified'
+import EmployeePerformance from './components/Dashboard/EmplyoeePerformance'
 const App = () => {
   return (
     <>
@@ -59,7 +62,6 @@ const App = () => {
               <Dashboard />
             </Sidebar>
           } />
-          {/* Leads Routes */}
           <Route exact path='/all/enquiry' element={
             <Sidebar>
               <AllEnquiry />
@@ -70,37 +72,37 @@ const App = () => {
               <FollowUps />
             </Sidebar>
           } />
-          <Route exact path='/remindercall/welcomecall' element={
+          <Route exact path='/followups/welcomecall' element={
             <Sidebar>
               <ReminderCall />
             </Sidebar>
           } />
-          <Route exact path='/remindercall/paymentcall' element={
+          <Route exact path='/followups/paymentcall' element={
             <Sidebar>
               <PaymentCall />
             </Sidebar>
           } />
-          <Route exact path='/remindercall/upgradecall' element={
+          <Route exact path='/followups/upgradecall' element={
             <Sidebar>
               <UpgradeCall />
             </Sidebar>
           } />
-          <Route exact path='/remindercall/renewalcall' element={
+          <Route exact path='/followups/renewalcall' element={
             <Sidebar>
               <RenewalCall />
             </Sidebar>
           } />
-          <Route exact path='/remindercall/irregularcall' element={
+          <Route exact path='/followups/irregularcall' element={
             <Sidebar>
               <IrregularCall />
             </Sidebar>
           } />
-          <Route exact path='/remindercall/inboundcall' element={
+          <Route exact path='/followups/inboundcall' element={
             <Sidebar>
               <InboundCall />
             </Sidebar>
           } />
-          <Route exact path='/remindercall/birthday&annversarycall' element={
+          <Route exact path='/followups/birthday&annversarycall' element={
             <Sidebar>
               <BdayAnnver />
             </Sidebar>
@@ -191,6 +193,16 @@ const App = () => {
           <Route exact path='/pushnotification/marketing' element={
             <Sidebar>
               <PushNotification />
+            </Sidebar>
+          } />
+          <Route exact path='/offer/marketing' element={
+            <Sidebar>
+              <Offer />
+            </Sidebar>
+          } />
+          <Route exact path='/unqualified/marketing' element={
+            <Sidebar>
+              <Unqualified />
             </Sidebar>
           } />
           <Route exact path='/ptDeshboard/training' element={
@@ -288,6 +300,16 @@ const App = () => {
           <Route exact path='/postpaidRevenue/finance' element={
             <Sidebar>
               <PostpaidRevenue />
+            </Sidebar>
+          } />
+          <Route exact path='/empDashboard/ptPerfomance' element={
+            <Sidebar>
+              <PTDashboard />
+            </Sidebar>
+          } />
+          <Route exact path='/empDashboard/empPerfomance' element={
+            <Sidebar>
+              <EmployeePerformance />
             </Sidebar>
           } />
           

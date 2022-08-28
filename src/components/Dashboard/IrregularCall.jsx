@@ -8,7 +8,7 @@ import 'react-calendar/dist/Calendar.css';
 const IrregularCall = () => {
     const [action, setAction] = useState('All Staff');
     const [call, setCall] = useState('All Call');
-    const [staff, setStaff] = useState('All Staff');
+    const [staff, setStaff] = useState('Select');
     const [value, onChange] = useState(new Date());
     const [openCal, setCal] = useState(false);
     return (
@@ -16,7 +16,7 @@ const IrregularCall = () => {
             <Navbar />
             <div className="page_reducer_1">
                 <div className="dbox-10">
-                    <div className="text-center mb-2 text-capitalize" style={{ fontSize: "23px" }}>LEADERBOARD</div>
+                    <div className="text-center mb-2 mt-3" style={{ fontSize: "23px" }}>IRREGULAR CALLS</div>
                     <div className="d-flex align-items-center justify-content-center mt-3" style={{ gap: "30px" }}>
                         <div style={{ fontSize: "15px" }}>From</div>
                         <div className="cal-icon">
@@ -59,9 +59,8 @@ const IrregularCall = () => {
                         </div>
                     </div>
 
-                    <div className="text-center mb-2 mt-3" style={{ fontSize: "23px" }}>IRREGULAR CALLS</div>
-                    <div className="d-flex justify-content-between">
-                        <div className="d-flex" style={{ gap: "30px" }}>
+                    <div className="d-flex justify-content-between mt-10">
+                        <div className="d-flex" style={{ gap: "30px"}}>
                             <div className="d-flex align-items-center" style={{ gap: "20px" }}>
                                 <div>Communicate</div>
                                 <div class="btn-group">

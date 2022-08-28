@@ -280,6 +280,15 @@ li{
   width:200px;
   height:39px;
 }
+.btn-own4{
+  background-color:rgb(151, 151, 151);
+  font-size:18px;
+  font-weight: bold;
+  width:100%;
+  padding: 5px;
+  height:39px;
+  border-radius: 5px;
+}
 .btn-own1{
   background-color: green;
   color: #fff;
@@ -490,10 +499,12 @@ li Link {
   color:rgb(255, 255, 255)!important;
   border: 1px solid #000;
   padding: 3px 10px;
-  background:#000;
+  background:rgb(44, 43, 43);
   margin:5px 0px;
 }
 .side-box-1:hover{
   background:#fff;
   color:#000!important;
 }
+
+
