@@ -64,7 +64,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Full name:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -75,14 +75,14 @@ const FitnessProfile = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 ">
                 <div className="d-flex right" style={{ gap: "30px" }}>
                   <div className="mr-3">Country Code:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
-                  <div className="btn-group mt-2">
+                  <div className="btn-group ">
                     <button
                       type="button"
                       className="btn btn-own dropdown-toggle"
@@ -111,7 +111,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Contact Number:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -127,7 +127,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Whatsapp Number:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -143,7 +143,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Email:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -160,7 +160,7 @@ const FitnessProfile = () => {
                 </div>
               </div>
 
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex mt-2" style={{ gap: "30px" }}>
                   <label style={{ color: "#fff" }}>
                     <input
@@ -189,7 +189,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Date of Birth:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -205,7 +205,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Anniversary:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -221,7 +221,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Address:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <textarea
@@ -242,7 +242,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Area:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -259,7 +259,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">City:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -289,14 +289,54 @@ const FitnessProfile = () => {
                       {blood}
                     </button>
                     <div className="dropdown-menu">
-                      <label onClick={() => setBlood("A+")}>A+</label>
-                      <label onClick={() => setBlood("A-")}>A-</label>
-                      <label onClick={() => setBlood("B+")}>B+</label>
-                      <label onClick={() => setBlood("B-")}>B-</label>
-                      <label onClick={() => setBlood("O+")}>O+</label>
-                      <label onClick={() => setBlood("O-")}>O-</label>
-                      <label onClick={() => setBlood("AB+")}>AB+</label>
-                      <label onClick={() => setBlood("AB-")}>AB-</label>
+                      <label
+                        class="dropdown-item"
+                        onClick={() => setBlood("A+")}
+                      >
+                        A+
+                      </label>
+                      <label
+                        class="dropdown-item"
+                        onClick={() => setBlood("A-")}
+                      >
+                        A-
+                      </label>
+                      <label
+                        class="dropdown-item"
+                        onClick={() => setBlood("B+")}
+                      >
+                        B+
+                      </label>
+                      <label
+                        class="dropdown-item"
+                        onClick={() => setBlood("B-")}
+                      >
+                        B-
+                      </label>
+                      <label
+                        class="dropdown-item"
+                        onClick={() => setBlood("O+")}
+                      >
+                        O+
+                      </label>
+                      <label
+                        class="dropdown-item"
+                        onClick={() => setBlood("O-")}
+                      >
+                        O-
+                      </label>
+                      <label
+                        class="dropdown-item"
+                        onClick={() => setBlood("AB+")}
+                      >
+                        AB+
+                      </label>
+                      <label
+                        class="dropdown-item"
+                        onClick={() => setBlood("AB-")}
+                      >
+                        AB-
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -307,7 +347,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Facebook ID:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -324,7 +364,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Pincode:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -341,7 +381,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">School Name:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -358,7 +398,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">School Timings:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -375,7 +415,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Mother's name:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -392,7 +432,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Mother's Profession:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -409,7 +449,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Father's name:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -426,7 +466,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Father's Profession:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -444,7 +484,7 @@ const FitnessProfile = () => {
                 </div>
               </div>
 
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex mt-2" style={{ gap: "30px" }}>
                   <label style={{ color: "#fff" }}>
                     <input
@@ -485,7 +525,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Level:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -516,7 +556,7 @@ const FitnessProfile = () => {
                 </div>
               </div>
               <div className="col-lg-8">
-                <div className="btn-group mt-2">
+                <div className="btn-group mt-3">
                   <ToggleButton toggled={sms} onClick={() => setSms(!sms)} />
                 </div>
               </div>
@@ -526,7 +566,7 @@ const FitnessProfile = () => {
                 </div>
               </div>
               <div className="col-lg-8">
-                <div className="btn-group mt-2">
+                <div className="btn-group mt-3">
                   <ToggleButton toggled={mail} onClick={() => setMail(!mail)} />
                 </div>
               </div>
@@ -536,7 +576,7 @@ const FitnessProfile = () => {
                 </div>
               </div>
               <div className="col-lg-8">
-                <div className="btn-group mt-2">
+                <div className="btn-group mt-3">
                   <ToggleButton toggled={push} onClick={() => setPush(!push)} />
                 </div>
               </div>
@@ -559,7 +599,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Name:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -606,7 +646,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Contact Number:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -622,7 +662,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Relationship:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -852,7 +892,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Attendance ID:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -869,7 +909,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Club ID:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -886,7 +926,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">National ID:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -903,7 +943,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Locker Key No:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -919,7 +959,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">PAN:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -948,7 +988,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Secondary Name:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -965,7 +1005,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Secondary Number:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -1084,7 +1124,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Nominee name:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -1101,7 +1141,7 @@ const FitnessProfile = () => {
                   <div className="mr-3 ">Nominee Relation:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input

@@ -24,7 +24,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Occupation:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -40,7 +40,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Company name:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -57,7 +57,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Official Email:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -73,7 +73,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Contact Number:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -90,7 +90,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Whatsapp Number:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -107,7 +107,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Primary Address:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -123,7 +123,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">City:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -140,7 +140,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">State:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -157,7 +157,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">PIN:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -174,7 +174,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Country:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -191,7 +191,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Primary Wing:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -221,7 +221,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Occupation:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -237,7 +237,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Company name:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -254,7 +254,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Official Email:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -270,7 +270,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Secondary Address:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -286,7 +286,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">City:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -303,7 +303,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">State:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -320,7 +320,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">PIN:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -337,7 +337,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Country:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -354,7 +354,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Secondary Wing:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -385,7 +385,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Company address:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -401,7 +401,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">HR Number:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -417,7 +417,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">HR Email:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -447,7 +447,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Parent / Guardian Full Name:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -464,7 +464,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Contact Number:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -481,7 +481,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Home Contact Number:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -498,7 +498,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Email:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -515,7 +515,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Relationship:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -532,7 +532,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Address:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -548,7 +548,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">City:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -579,7 +579,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Parent / Guardian Full Name:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -596,7 +596,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Contact Number:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -613,7 +613,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Home Contact Number:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -630,7 +630,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Email:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -647,7 +647,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Relationship:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -664,7 +664,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">Address:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
@@ -680,7 +680,7 @@ const ProfessionalInformation = () => {
                   <div className="mr-3 ">City:</div>
                 </div>
               </div>
-              <div className="col-lg-8">
+              <div className="col-lg-8 mt-2">
                 <div className="d-flex" style={{ gap: "30px" }}>
                   <div className="btn-group">
                     <input
