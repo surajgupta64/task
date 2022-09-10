@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "react-calendar/dist/Calendar.css";
 import Navbar from "../Layout/Navbar";
-const Dtask = [
+/* const Dtask = [
   {
     title: "Service expiry",
     value: "5",
@@ -67,7 +67,7 @@ const Dtask = [
     color: "red",
     font: "white",
   },
-];
+]; */
 const PTDashboard = () => {
   const [action, setAction] = useState("Birthday");
   return (
