@@ -43,7 +43,7 @@ const EnquiryForm = () => {
                 </div>
                 <div className="col-lg-8">
                   <div className="d-flex" style={{ gap: "30px" }}>
-                    <div className="btn-group">
+                    <div className="btn-group mt-2">
                       <input
                         type="text"
                         className="btn btn-own"
@@ -102,7 +102,7 @@ const EnquiryForm = () => {
                 </div>
                 <div className="col-lg-8">
                   <div className="d-flex" style={{ gap: "30px" }}>
-                    <div className="btn-group">
+                    <div className="btn-group mt-2">
                       <input
                         type="number"
                         className="btn btn-own"
@@ -118,7 +118,7 @@ const EnquiryForm = () => {
                 </div>
                 <div className="col-lg-8">
                   <div className="d-flex" style={{ gap: "30px" }}>
-                    <div className="btn-group">
+                    <div className="btn-group mt-2">
                       <input
                         type="email"
                         className="btn btn-own"
@@ -164,7 +164,7 @@ const EnquiryForm = () => {
                 </div>
                 <div className="col-lg-8">
                   <div className="d-flex" style={{ gap: "30px" }}>
-                    <div className="btn-group">
+                    <div className="btn-group mt-2">
                       <input
                         type="Date"
                         className="btn btn-own"

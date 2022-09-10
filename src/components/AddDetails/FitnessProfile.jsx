@@ -1,18 +1,6 @@
 import React, { useState } from "react";
-import { BsCalendarCheck } from "react-icons/bs";
-import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import { MdOutlineCheckBoxOutlineBlank } from "react-icons/md";
 import profile from "../../Images/profile.png";
-import {
-  AiOutlineDelete,
-  AiOutlineArrowLeft,
-  AiOutlineArrowRight,
-  AiFillEdit,
-} from "react-icons/ai";
-import Table from "../Table";
-import { FaWhatsapp } from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
 import ToggleButton from "../ToggleButton";
 
 const FitnessProfile = () => {
