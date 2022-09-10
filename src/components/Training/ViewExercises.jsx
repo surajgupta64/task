@@ -39,27 +39,24 @@ const ViewExercises = () => {
                     {action1}
                   </button>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    <label
+                      className="dropdown-item"
                       onClick={() => setAction1("Select Category")}
                     >
                       Selrct Category
-                    </a>
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    </label>
+                    <label
+                      className="dropdown-item"
                       onClick={() => setAction1("cardio")}
                     >
                       cardio
-                    </a>
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    </label>
+                    <label
+                      className="dropdown-item"
                       onClick={() => setAction1("other")}
                     >
                       other
-                    </a>
+                    </label>
                   </div>
                 </div>
 
@@ -105,10 +102,10 @@ const ViewExercises = () => {
                 <td className="td-2">1</td>
                 <td className="td-3">Shoulders</td>
                 <td className="td-2">
-                  <img src="#" alt="image" />
+                  <img src="#" alt="not found" />
                 </td>
                 <td className="td-3">
-                  <a href="#">view</a>
+                  <label className="label">view</label>
                 </td>
                 <td className="td-2">Arnold Dumbbell Press</td>
                 <td className="td-3"></td>

@@ -11,7 +11,6 @@ import {
 import Table from "../Table";
 const AllClients = () => {
   const [action, setAction] = useState("All Clients");
-  const [allClientsData, setAllClientsData] = useState([]);
 
   const column = [
     /* 

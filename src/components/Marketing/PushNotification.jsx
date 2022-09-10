@@ -1,35 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "../Layout/Navbar";
-import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import {
-  MdOutlineCheckBoxOutlineBlank,
-  MdOutlineCheckBox,
-  MdOutlineAddBox,
-} from "react-icons/md";
-import {
-  AiOutlineMinusSquare,
-  AiOutlineDelete,
-  AiFillEdit,
-} from "react-icons/ai";
-import { HiOutlinePencilAlt } from "react-icons/hi";
-import { FiMail } from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa";
-import {
-  BsCalendarEvent,
-  BsFilePostFill,
-  BsCalendarCheck,
-} from "react-icons/bs";
 const PushNotification = () => {
-  const [action, setAction] = useState("Select");
-  const [options, setOptions] = useState("All Members");
-  const [action1, setAction1] = useState("Select SMS Type");
-  const [value, onChange] = useState(new Date());
-  const [openCal, setCal] = useState(false);
-
-  const onRadioChange = (e) => {
-    setOptions(e.target.value);
-  };
   return (
     <>
       <Navbar />

@@ -204,7 +204,9 @@ const Revenue = () => {
                   </div>
                 </td>
                 <td className="td-2">1</td>
-                <td className="td-3">dakshta</td>
+                <td className="td-3" onClick={() => setAction1("suraj")}>
+                  dakshta
+                </td>
                 <td className="td-2">Payments</td>
                 <td className="td-3">
                   <label className="label">View</label>

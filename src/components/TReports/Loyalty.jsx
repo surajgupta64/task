@@ -83,10 +83,10 @@ const Loyalty = () => {
                 <td className="td-2">1</td>
                 <td className="td-3">Shoulders</td>
                 <td className="td-2">
-                  <img src="#" alt="image" />
+                  <img src="#" alt="not found" />
                 </td>
                 <td className="td-3">
-                  <a href="#">view</a>
+                  <label className="label">view</label>
                 </td>
                 <td className="td-3"></td>
                 <td className="td-2">Admin</td>

@@ -9,7 +9,6 @@ const Dtask = [
     value: "5",
     css: "sum-lgrey",
     color: "green",
-    color: "green",
   },
   {
     title: "PT expiry",

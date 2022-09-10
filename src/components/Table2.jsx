@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./Table.css";
 
 const SalesClosure = ({ data, title }) => {
@@ -9,17 +9,25 @@ const SalesClosure = ({ data, title }) => {
   const [collected, setCollected] = useState(0);
   const [achived, setAchived] = useState(0);
 
-  useEffect(() => {
-    data.map((value1) => {
-      setTarget(target + Number(value1.Target));
-      setNewsales(newsales + Number(value1.NewSales));
-      setRenewals(renewals + Number(value1.Renewals));
-      setBalance(balance + Number(value1.Balance));
-      setCollected(collected + Number(value1.Collected));
-      setAchived(achived + Number(value1.Achived));
-      console.log(value1.target);
-    });
-  }, []);
+  data.map((value1) => {
+    return setTarget(target + Number(value1.Target));
+  });
+  data.map((value1) => {
+    return setNewsales(newsales + Number(value1.NewSales));
+  });
+  data.map((value1) => {
+    return setRenewals(renewals + Number(value1.Renewals));
+  });
+  data.map((value1) => {
+    return setBalance(balance + Number(value1.Balance));
+  });
+
+  data.map((value1) => {
+    return setCollected(collected + Number(value1.Collected));
+  });
+  data.map((value1) => {
+    return setAchived(achived + Number(value1.Achived));
+  });
 
   return (
     <table style={{ width: "100%", marginTop: "20px" }}>
@@ -91,17 +99,21 @@ const ClientClosure = ({ data, title }) => {
   const [balance, setBalance] = useState(0);
   const [achived, setAchived] = useState(0);
 
-  useEffect(() => {
-    data.map((value1) => {
-      setTarget(target + Number(value1.TargetClient));
-      setNewsales(newsales + Number(value1.NewClient));
-      setRenewals(renewals + Number(value1.RenewalsClient));
-      setBalance(balance + Number(value1.Closure));
-      setAchived(achived + Number(value1.Achived));
-      console.log(value1.target);
-    });
-  }, []);
-
+  data.map((value1) => {
+    return setTarget(target + Number(value1.TargetClient));
+  });
+  data.map((value1) => {
+    return setNewsales(newsales + Number(value1.NewClient));
+  });
+  data.map((value1) => {
+    return setRenewals(renewals + Number(value1.RenewalsClient));
+  });
+  data.map((value1) => {
+    return setBalance(balance + Number(value1.Closure));
+  });
+  data.map((value1) => {
+    return setAchived(achived + Number(value1.Achived));
+  });
   return (
     <table style={{ width: "100%", marginTop: "20px" }}>
       <thead>
@@ -169,16 +181,21 @@ const LeadTarget = ({ data, title }) => {
   const [balance, setBalance] = useState(0);
   const [achived, setAchived] = useState(0);
 
-  useEffect(() => {
-    data.map((value1) => {
-      setTarget(target + Number(value1.LeadAssin));
-      setNewsales(newsales + Number(value1.SpotConversions));
-      setRenewals(renewals + Number(value1.TotalLeads));
-      setBalance(balance + Number(value1.TotalAmount));
-      setAchived(achived + Number(value1.Achived));
-      console.log(value1.target);
-    });
-  }, []);
+  data.map((value1) => {
+    return setTarget(target + Number(value1.LeadAssin));
+  });
+  data.map((value1) => {
+    return setNewsales(newsales + Number(value1.SpotConversions));
+  });
+  data.map((value1) => {
+    return setRenewals(renewals + Number(value1.TotalLeads));
+  });
+  data.map((value1) => {
+    return setBalance(balance + Number(value1.TotalAmount));
+  });
+  data.map((value1) => {
+    return setAchived(achived + Number(value1.Achived));
+  });
 
   return (
     <table style={{ width: "100%", marginTop: "20px" }}>
@@ -246,16 +263,21 @@ const RenewalsTarget = ({ data, title }) => {
   const [balance, setBalance] = useState(0);
   const [achived, setAchived] = useState(0);
 
-  useEffect(() => {
-    data.map((value1) => {
-      setTarget(target + Number(value1.TargetPer));
-      setNewsales(newsales + Number(value1.NoRenewals));
-      setRenewals(renewals + Number(value1.Conversion));
-      setBalance(balance + Number(value1.TotalAmount));
-      setAchived(achived + Number(value1.Achived));
-      console.log(value1.target);
-    });
-  }, [data]);
+  data.map((value1) => {
+    return setTarget(target + Number(value1.TargetPer));
+  });
+  data.map((value1) => {
+    return setNewsales(newsales + Number(value1.NoRenewals));
+  });
+  data.map((value1) => {
+    return setRenewals(renewals + Number(value1.Conversion));
+  });
+  data.map((value1) => {
+    return setBalance(balance + Number(value1.TotalAmount));
+  });
+  data.map((value1) => {
+    return setAchived(achived + Number(value1.Achived));
+  });
 
   return (
     <table style={{ width: "100%", marginTop: "20px" }}>
@@ -324,16 +346,21 @@ const RefranceLeadTarget = ({ data, title }) => {
   const [balance, setBalance] = useState(0);
   const [achived, setAchived] = useState(0);
 
-  useEffect(() => {
-    data.map((value1) => {
-      setTarget(target + Number(value1.NoRefranceTaget));
-      setNewsales(newsales + Number(value1.LeadGenerated));
-      setRenewals(renewals + Number(value1.ConvertMember));
-      setBalance(balance + Number(value1.TotalAmount));
-      setAchived(achived + Number(value1.Achived));
-      console.log(value1.target);
-    });
-  }, [data]);
+  data.map((value1) => {
+    return setTarget(target + Number(value1.NoRefranceTaget));
+  });
+  data.map((value1) => {
+    return setNewsales(newsales + Number(value1.LeadGenerated));
+  });
+  data.map((value1) => {
+    return setRenewals(renewals + Number(value1.ConvertMember));
+  });
+  data.map((value1) => {
+    return setBalance(balance + Number(value1.TotalAmount));
+  });
+  data.map((value1) => {
+    return setAchived(achived + Number(value1.Achived));
+  });
 
   return (
     <table style={{ width: "100%", marginTop: "20px" }}>
@@ -404,18 +431,27 @@ const DailyCalls = ({ data, title }) => {
   const [renewalsCall, setRenewalsCall] = useState(0);
   const [achived, setAchived] = useState(0);
 
-  useEffect(() => {
-    data.map((value1) => {
-      setTarget(target + Number(value1.CallTarget));
-      setNewsales(newsales + Number(value1.TotalCompleted));
-      setRenewals(renewals + Number(value1.FollowupCall));
-      setBalance(balance + Number(value1.ServicesCall));
-      setMember(member + Number(value1.MemberCall));
-      setRenewalsCall(renewalsCall + Number(value1.RenewalsCall));
-      setAchived(achived + Number(value1.Achived));
-      console.log(value1.target);
-    });
-  }, [data]);
+  data.map((value1) => {
+    return setTarget(target + Number(value1.CallTarget));
+  });
+  data.map((value1) => {
+    return setNewsales(newsales + Number(value1.TotalCompleted));
+  });
+  data.map((value1) => {
+    return setRenewals(renewals + Number(value1.FollowupCall));
+  });
+  data.map((value1) => {
+    return setBalance(balance + Number(value1.ServicesCall));
+  });
+  data.map((value1) => {
+    return setMember(member + Number(value1.MemberCall));
+  });
+  data.map((value1) => {
+    return setRenewalsCall(renewalsCall + Number(value1.RenewalsCall));
+  });
+  data.map((value1) => {
+    return setAchived(achived + Number(value1.Achived));
+  });
 
   return (
     <table style={{ width: "100%", marginTop: "20px" }}>
@@ -490,17 +526,21 @@ const MediaTarget = ({ data, title }) => {
   const [balance, setBalance] = useState(0);
   const [achived, setAchived] = useState(0);
 
-  useEffect(() => {
-    data.map((value1) => {
-      setTarget(target + Number(value1.GoogleReviews));
-      setNewsales(newsales + Number(value1.FB));
-      setRenewals(renewals + Number(value1.Instagram));
-      setBalance(balance + Number(value1.FeedbackVideo));
-      setAchived(achived + Number(value1.Achived));
-      console.log(value1.target);
-    });
-  }, [data]);
-
+  data.map((value1) => {
+    return value1.GoogleReviews && setTarget(target + 1);
+  });
+  data.map((value1) => {
+    return value1.FB && setNewsales(newsales + 1);
+  });
+  data.map((value1) => {
+    return value1.Instagram && setRenewals(renewals + 1);
+  });
+  data.map((value1) => {
+    return value1.FeedbackVideo && setBalance(balance + 1);
+  });
+  data.map((value1) => {
+    return setAchived(achived + Number(value1.Achived));
+  });
   return (
     <table style={{ width: "100%", marginTop: "20px" }}>
       <thead>
@@ -569,17 +609,24 @@ const RevenueTarget = ({ data, title }) => {
   const [balance, setBalance] = useState(0);
   const [achived, setAchived] = useState(0);
 
-  useEffect(() => {
-    data.map((value1) => {
-      setTarget(target + Number(value1.Target));
-      setCollected(collected + Number(value1.Collected));
-      setNewsales(newsales + Number(value1.NewSales));
-      setRenewals(renewals + Number(value1.Renewals));
-      setBalance(balance + Number(value1.Balance));
-      setAchived(achived + Number(value1.Achived));
-      console.log(value1.target);
-    });
-  }, [data]);
+  data.map((value1) => {
+    return setTarget(target + Number(value1.Target));
+  });
+  data.map((value1) => {
+    return setCollected(collected + Number(value1.Collected));
+  });
+  data.map((value1) => {
+    return setNewsales(newsales + Number(value1.NewSales));
+  });
+  data.map((value1) => {
+    return setRenewals(renewals + Number(value1.Renewals));
+  });
+  data.map((value1) => {
+    return setBalance(balance + Number(value1.Balance));
+  });
+  data.map((value1) => {
+    return setAchived(achived + Number(value1.Achived));
+  });
 
   return (
     <table style={{ width: "100%", marginTop: "20px" }}>

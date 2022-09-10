@@ -43,7 +43,7 @@ const FitnessProfile = () => {
                     height="100px"
                     style={{ borderRadius: "5px" }}
                     src={profile}
-                    alt="Profile image"
+                    alt="Profile"
                   />
                 </div>
               </div>

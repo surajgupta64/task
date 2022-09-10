@@ -150,7 +150,12 @@ const CustomerReview = () => {
               <AiOutlineArrowLeft />
               Previous
             </button>
-            <p style={{ padding: "20px", marginTop: "10px" }}>Page 1 to 10</p>
+            <p
+              style={{ padding: "20px", marginTop: "10px" }}
+              onClick={() => setAction("suraj")}
+            >
+              Page 1 to 10
+            </p>
             <button className="btn btn_enquiry">
               Next
               <AiOutlineArrowRight />
