@@ -115,27 +115,9 @@ const MembershipRetention = () => {
                     {action}
                   </button>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("2022")}
-                    >
-                      2022
-                    </a>
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("2021")}
-                    >
-                      2021
-                    </a>
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("202")}
-                    >
-                      2020
-                    </a>
+                    <label onClick={() => setAction("2022")}>2022</label>
+                    <label onClick={() => setAction("2021")}>2021</label>
+                    <label onClick={() => setAction("202")}>2020</label>
                   </div>
                 </div>
                 <div>

@@ -56,34 +56,16 @@ const ClientBiometric = () => {
                   {action}
                 </button>
                 <div class="dropdown-menu">
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Today")}
-                  >
-                    Today
-                  </a>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Last Seven Days")}
-                  >
+                  <label onClick={() => setAction("Today")}>Today</label>
+                  <label onClick={() => setAction("Last Seven Days")}>
                     Last Seven Days
-                  </a>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Month Till Date")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Month Till Date")}>
                     Month Till Date
-                  </a>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Custom Date Range")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Custom Date Range")}>
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
               <div class="btn-group">
@@ -97,34 +79,16 @@ const ClientBiometric = () => {
                   {action}
                 </button>
                 <div class="dropdown-menu">
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Today")}
-                  >
-                    Today
-                  </a>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Last Seven Days")}
-                  >
+                  <label onClick={() => setAction("Today")}>Today</label>
+                  <label onClick={() => setAction("Last Seven Days")}>
                     Last Seven Days
-                  </a>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Month Till Date")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Month Till Date")}>
                     Month Till Date
-                  </a>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Custom Date Range")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Custom Date Range")}>
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
               <div>

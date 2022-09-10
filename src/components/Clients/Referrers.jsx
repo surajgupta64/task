@@ -1,40 +1,15 @@
 import React, { useState } from "react";
 import Navbar from "../Layout/Navbar";
-import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
+import { MdOutlineAddBox, MdPhoneMissed } from "react-icons/md";
 import {
-  MdOutlineCheckBoxOutlineBlank,
-  MdOutlineCheckBox,
-  MdOutlineAddBox,
-  MdPhoneMissed,
-} from "react-icons/md";
-import {
-  AiOutlineMinusSquare,
-  AiOutlineDelete,
-  AiFillEdit,
   AiOutlineInfoCircle,
   AiOutlineArrowLeft,
   AiOutlineArrowRight,
 } from "react-icons/ai";
-import { HiOutlinePencilAlt } from "react-icons/hi";
-import { FiMail } from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa";
-import {
-  BsCalendarEvent,
-  BsFilePostFill,
-  BsCalendarCheck,
-} from "react-icons/bs";
 import Table from "../Table";
 const Referrers = () => {
   const [action, setAction] = useState("All Clients");
-
-  const [TotalM, setTotalM] = useState(187);
-
-  const [ActiveM, setActiveM] = useState(120);
-
-  const [InactiveM, setInactiveM] = useState(67);
-  const [value, onChange] = useState(new Date());
-  const [openCal, setCal] = useState(false);
 
   const column = [
     /* 
@@ -131,34 +106,16 @@ const Referrers = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Today")}
-                  >
-                    Today
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Last Seven Days")}
-                  >
+                  <label onClick={() => setAction("Today")}>Today</label>
+                  <label onClick={() => setAction("Last Seven Days")}>
                     Last Seven Days
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Month Till Date")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Month Till Date")}>
                     Month Till Date
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Custom Date Range")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Custom Date Range")}>
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
             </div>
@@ -179,34 +136,16 @@ const Referrers = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Today")}
-                  >
-                    Today
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Last Seven Days")}
-                  >
+                  <label onClick={() => setAction("Today")}>Today</label>
+                  <label onClick={() => setAction("Last Seven Days")}>
                     Last Seven Days
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Month Till Date")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Month Till Date")}>
                     Month Till Date
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Custom Date Range")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Custom Date Range")}>
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
             </div>
@@ -235,34 +174,18 @@ const Referrers = () => {
                     {action}
                   </button>
                   <div className="dropdown-menu">
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("AllClients")}
-                    >
+                    <label onClick={() => setAction("AllClients")}>
                       All Clients
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("Last Seven Days")}
-                    >
+                    </label>
+                    <label onClick={() => setAction("Last Seven Days")}>
                       Last Seven Days
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("Month Till Date")}
-                    >
+                    </label>
+                    <label onClick={() => setAction("Month Till Date")}>
                       Month Till Date
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("Custom Date Range")}
-                    >
+                    </label>
+                    <label onClick={() => setAction("Custom Date Range")}>
                       Custom Date Range
-                    </a>
+                    </label>
                   </div>
                 </div>
               </div>
@@ -284,34 +207,16 @@ const Referrers = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Today")}
-                  >
-                    Today
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Last Seven Days")}
-                  >
+                  <label onClick={() => setAction("Today")}>Today</label>
+                  <label onClick={() => setAction("Last Seven Days")}>
                     Last Seven Days
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Month Till Date")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Month Till Date")}>
                     Month Till Date
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Custom Date Range")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Custom Date Range")}>
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
             </div>
@@ -329,34 +234,16 @@ const Referrers = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Today")}
-                  >
-                    Today
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Last Seven Days")}
-                  >
+                  <label onClick={() => setAction("Today")}>Today</label>
+                  <label onClick={() => setAction("Last Seven Days")}>
                     Last Seven Days
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Month Till Date")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Month Till Date")}>
                     Month Till Date
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Custom Date Range")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Custom Date Range")}>
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
             </div>

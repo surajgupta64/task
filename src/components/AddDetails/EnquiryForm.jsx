@@ -70,27 +70,18 @@ const EnquiryForm = () => {
                         {action1}
                       </button>
                       <div className="dropdown-menu">
-                        <a
+                        <label
                           className="dropdown-item"
-                          href="#"
                           onClick={() => setAction1("Pakistan (+92)")}
                         >
                           Pakistan (+92)
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction1("Nepal (+977)")}
-                        >
+                        </label>
+                        <label onClick={() => setAction1("Nepal (+977)")}>
                           Nepal (+977)
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction1("Bangladesh (+880)")}
-                        >
+                        </label>
+                        <label onClick={() => setAction1("Bangladesh (+880)")}>
                           Bangladesh (+880)
-                        </a>
+                        </label>
                       </div>
                     </div>
                   </div>
@@ -272,27 +263,15 @@ const EnquiryForm = () => {
                         {action1}
                       </button>
                       <div className="dropdown-menu">
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction1("Pakistan (+92)")}
-                        >
+                        <label onClick={() => setAction1("Pakistan (+92)")}>
                           Pakistan (+92)
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction1("Nepal (+977)")}
-                        >
+                        </label>
+                        <label onClick={() => setAction1("Nepal (+977)")}>
                           Nepal (+977)
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction1("Bangladesh (+880)")}
-                        >
+                        </label>
+                        <label onClick={() => setAction1("Bangladesh (+880)")}>
                           Bangladesh (+880)
-                        </a>
+                        </label>
                       </div>
                     </div>
                   </div>
@@ -376,27 +355,9 @@ const EnquiryForm = () => {
                         {action}
                       </button>
                       <div className="dropdown-menu">
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction("Yoga")}
-                        >
-                          Yoga
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction("TTC")}
-                        >
-                          TTC
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction("PT")}
-                        >
-                          PT
-                        </a>
+                        <label onClick={() => setAction("Yoga")}>Yoga</label>
+                        <label onClick={() => setAction("TTC")}>TTC</label>
+                        <label onClick={() => setAction("PT")}>PT</label>
                       </div>
                     </div>
                   </div>
@@ -419,27 +380,9 @@ const EnquiryForm = () => {
                         {action}
                       </button>
                       <div className="dropdown-menu">
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction("Yoga")}
-                        >
-                          Yoga
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction("TTC")}
-                        >
-                          TTC
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction("PT")}
-                        >
-                          PT
-                        </a>
+                        <label onClick={() => setAction("Yoga")}>Yoga</label>
+                        <label onClick={() => setAction("TTC")}>TTC</label>
+                        <label onClick={() => setAction("PT")}>PT</label>
                       </div>
                     </div>
                   </div>
@@ -462,27 +405,9 @@ const EnquiryForm = () => {
                         {action}
                       </button>
                       <div className="dropdown-menu">
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction("Yoga")}
-                        >
-                          Yoga
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction("TTC")}
-                        >
-                          TTC
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction("PT")}
-                        >
-                          PT
-                        </a>
+                        <label onClick={() => setAction("Yoga")}>Yoga</label>
+                        <label onClick={() => setAction("TTC")}>TTC</label>
+                        <label onClick={() => setAction("PT")}>PT</label>
                       </div>
                     </div>
                   </div>
@@ -505,27 +430,9 @@ const EnquiryForm = () => {
                         {action}
                       </button>
                       <div className="dropdown-menu">
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction("Yoga")}
-                        >
-                          Yoga
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction("TTC")}
-                        >
-                          TTC
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction("PT")}
-                        >
-                          PT
-                        </a>
+                        <label onClick={() => setAction("Yoga")}>Yoga</label>
+                        <label onClick={() => setAction("TTC")}>TTC</label>
+                        <label onClick={() => setAction("PT")}>PT</label>
                       </div>
                     </div>
                   </div>
@@ -562,27 +469,15 @@ const EnquiryForm = () => {
                         {"Prabha Yadav"}
                       </button>
                       <div className="dropdown-menu">
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction1("Pakistan (+92)")}
-                        >
+                        <label onClick={() => setAction1("Pakistan (+92)")}>
                           Pakistan (+92)
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction1("Nepal (+977)")}
-                        >
+                        </label>
+                        <label onClick={() => setAction1("Nepal (+977)")}>
                           Nepal (+977)
-                        </a>
-                        <a
-                          className="dropdown-item"
-                          href="#"
-                          onClick={() => setAction1("Bangladesh (+880)")}
-                        >
+                        </label>
+                        <label onClick={() => setAction1("Bangladesh (+880)")}>
                           Bangladesh (+880)
-                        </a>
+                        </label>
                       </div>
                     </div>
                   </div>

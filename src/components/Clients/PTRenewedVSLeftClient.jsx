@@ -103,27 +103,9 @@ const PTRenewedVSLeftClient = () => {
                   {month}
                 </button>
                 <div class="dropdown-menu">
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onClick={() => setMonth("Jan")}
-                  >
-                    Jan
-                  </a>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onClick={() => setMonth("Feb")}
-                  >
-                    Feb
-                  </a>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onClick={() => setMonth("Mar")}
-                  >
-                    Mar
-                  </a>
+                  <label onClick={() => setMonth("Jan")}>Jan</label>
+                  <label onClick={() => setMonth("Feb")}>Feb</label>
+                  <label onClick={() => setMonth("Mar")}>Mar</label>
                 </div>
               </div>
               <div>Year</div>
@@ -138,27 +120,9 @@ const PTRenewedVSLeftClient = () => {
                   {year}
                 </button>
                 <div class="dropdown-menu">
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onClick={() => setYear("2022")}
-                  >
-                    2022
-                  </a>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onClick={() => setYear("2021")}
-                  >
-                    2021
-                  </a>
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onClick={() => setYear("202")}
-                  >
-                    2020
-                  </a>
+                  <label onClick={() => setYear("2022")}>2022</label>
+                  <label onClick={() => setYear("2021")}>2021</label>
+                  <label onClick={() => setYear("202")}>2020</label>
                 </div>
               </div>
               <div>

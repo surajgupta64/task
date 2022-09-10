@@ -138,13 +138,12 @@ const ActiveClients = () => {
                     {action}
                   </button>
                   <div class="dropdown-menu">
-                    <a
+                    <label
                       class="dropdown-item"
-                      href="#"
                       onClick={() => setAction("Custom Date Range")}
                     >
                       Custom Date Range
-                    </a>
+                    </label>
                   </div>
                 </div>
                 <div>

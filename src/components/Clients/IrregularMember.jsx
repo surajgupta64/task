@@ -106,34 +106,16 @@ const IrregularMember = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Today")}
-                  >
-                    Today
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Last Seven Days")}
-                  >
+                  <label onClick={() => setAction("Today")}>Today</label>
+                  <label onClick={() => setAction("Last Seven Days")}>
                     Last Seven Days
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Month Till Date")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Month Till Date")}>
                     Month Till Date
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Custom Date Range")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Custom Date Range")}>
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
             </div>
@@ -154,34 +136,16 @@ const IrregularMember = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Today")}
-                  >
-                    Today
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Last Seven Days")}
-                  >
+                  <label onClick={() => setAction("Today")}>Today</label>
+                  <label onClick={() => setAction("Last Seven Days")}>
                     Last Seven Days
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Month Till Date")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Month Till Date")}>
                     Month Till Date
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Custom Date Range")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Custom Date Range")}>
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
             </div>
@@ -210,34 +174,18 @@ const IrregularMember = () => {
                     {action}
                   </button>
                   <div className="dropdown-menu">
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("AllClients")}
-                    >
+                    <label onClick={() => setAction("AllClients")}>
                       All Clients
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("Last Seven Days")}
-                    >
+                    </label>
+                    <label onClick={() => setAction("Last Seven Days")}>
                       Last Seven Days
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("Month Till Date")}
-                    >
+                    </label>
+                    <label onClick={() => setAction("Month Till Date")}>
                       Month Till Date
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("Custom Date Range")}
-                    >
+                    </label>
+                    <label onClick={() => setAction("Custom Date Range")}>
                       Custom Date Range
-                    </a>
+                    </label>
                   </div>
                 </div>
               </div>
@@ -259,34 +207,16 @@ const IrregularMember = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Today")}
-                  >
-                    Today
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Last Seven Days")}
-                  >
+                  <label onClick={() => setAction("Today")}>Today</label>
+                  <label onClick={() => setAction("Last Seven Days")}>
                     Last Seven Days
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Month Till Date")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Month Till Date")}>
                     Month Till Date
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Custom Date Range")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Custom Date Range")}>
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
             </div>
@@ -304,34 +234,16 @@ const IrregularMember = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Today")}
-                  >
-                    Today
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Last Seven Days")}
-                  >
+                  <label onClick={() => setAction("Today")}>Today</label>
+                  <label onClick={() => setAction("Last Seven Days")}>
                     Last Seven Days
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Month Till Date")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Month Till Date")}>
                     Month Till Date
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Custom Date Range")}
-                  >
+                  </label>
+                  <label onClick={() => setAction("Custom Date Range")}>
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
             </div>

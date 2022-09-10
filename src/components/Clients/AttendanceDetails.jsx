@@ -136,27 +136,9 @@ const AttendanceDetails = () => {
                     {action}
                   </button>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("2019")}
-                    >
-                      2021
-                    </a>
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("2019")}
-                    >
-                      2019
-                    </a>
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("2019")}
-                    >
-                      2018
-                    </a>
+                    <label onClick={() => setAction("2019")}>2021</label>
+                    <label onClick={() => setAction("2019")}>2019</label>
+                    <label onClick={() => setAction("2019")}>2018</label>
                   </div>
                 </div>
                 <div className="mr-3">Month</div>
@@ -172,27 +154,9 @@ const AttendanceDetails = () => {
                     {action1}
                   </button>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      onClick={() => setAction1("August")}
-                    >
-                      August
-                    </a>
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      onClick={() => setAction1("July")}
-                    >
-                      July
-                    </a>
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      onClick={() => setAction1("June")}
-                    >
-                      June
-                    </a>
+                    <label onClick={() => setAction1("August")}>August</label>
+                    <label onClick={() => setAction1("July")}>July</label>
+                    <label onClick={() => setAction1("June")}>June</label>
                   </div>
                 </div>
               </div>

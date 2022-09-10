@@ -92,27 +92,15 @@ const PersonalInformation = () => {
                       {action1}
                     </button>
                     <div className="dropdown-menu">
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction1("Pakistan (+92)")}
-                      >
+                      <label onClick={() => setAction1("Pakistan (+92)")}>
                         Pakistan (+92)
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction1("Nepal (+977)")}
-                      >
+                      </label>
+                      <label onClick={() => setAction1("Nepal (+977)")}>
                         Nepal (+977)
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction1("Bangladesh (+880)")}
-                      >
+                      </label>
+                      <label onClick={() => setAction1("Bangladesh (+880)")}>
                         Bangladesh (+880)
-                      </a>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -300,62 +288,14 @@ const PersonalInformation = () => {
                       {blood}
                     </button>
                     <div className="dropdown-menu">
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setBlood("A+")}
-                      >
-                        A+
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setBlood("A-")}
-                      >
-                        A-
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setBlood("B+")}
-                      >
-                        B+
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setBlood("B-")}
-                      >
-                        B-
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setBlood("O+")}
-                      >
-                        O+
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setBlood("O-")}
-                      >
-                        O-
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setBlood("AB+")}
-                      >
-                        AB+
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setBlood("AB-")}
-                      >
-                        AB-
-                      </a>
+                      <label onClick={() => setBlood("A+")}>A+</label>
+                      <label onClick={() => setBlood("A-")}>A-</label>
+                      <label onClick={() => setBlood("B+")}>B+</label>
+                      <label onClick={() => setBlood("B-")}>B-</label>
+                      <label onClick={() => setBlood("O+")}>O+</label>
+                      <label onClick={() => setBlood("O-")}>O-</label>
+                      <label onClick={() => setBlood("AB+")}>AB+</label>
+                      <label onClick={() => setBlood("AB-")}>AB-</label>
                     </div>
                   </div>
                 </div>
@@ -647,27 +587,15 @@ const PersonalInformation = () => {
                       {action1}
                     </button>
                     <div className="dropdown-menu">
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction1("Pakistan (+92)")}
-                      >
+                      <label onClick={() => setAction1("Pakistan (+92)")}>
                         Pakistan (+92)
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction1("Nepal (+977)")}
-                      >
+                      </label>
+                      <label onClick={() => setAction1("Nepal (+977)")}>
                         Nepal (+977)
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction1("Bangladesh (+880)")}
-                      >
+                      </label>
+                      <label onClick={() => setAction1("Bangladesh (+880)")}>
                         Bangladesh (+880)
-                      </a>
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -735,27 +663,9 @@ const PersonalInformation = () => {
                       {action}
                     </button>
                     <div className="dropdown-menu">
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("Yoga")}
-                      >
-                        Yoga
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("TTC")}
-                      >
-                        TTC
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("PT")}
-                      >
-                        PT
-                      </a>
+                      <label onClick={() => setAction("Yoga")}>Yoga</label>
+                      <label onClick={() => setAction("TTC")}>TTC</label>
+                      <label onClick={() => setAction("PT")}>PT</label>
                     </div>
                   </div>
                 </div>
@@ -778,27 +688,9 @@ const PersonalInformation = () => {
                       {action}
                     </button>
                     <div className="dropdown-menu">
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("Yoga")}
-                      >
-                        Yoga
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("TTC")}
-                      >
-                        TTC
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("PT")}
-                      >
-                        PT
-                      </a>
+                      <label onClick={() => setAction("Yoga")}>Yoga</label>
+                      <label onClick={() => setAction("TTC")}>TTC</label>
+                      <label onClick={() => setAction("PT")}>PT</label>
                     </div>
                   </div>
                 </div>
@@ -821,27 +713,9 @@ const PersonalInformation = () => {
                       {action}
                     </button>
                     <div className="dropdown-menu">
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("Yoga")}
-                      >
-                        Yoga
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("TTC")}
-                      >
-                        TTC
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("PT")}
-                      >
-                        PT
-                      </a>
+                      <label onClick={() => setAction("Yoga")}>Yoga</label>
+                      <label onClick={() => setAction("TTC")}>TTC</label>
+                      <label onClick={() => setAction("PT")}>PT</label>
                     </div>
                   </div>
                 </div>
@@ -877,27 +751,9 @@ const PersonalInformation = () => {
                       {"Prabha"}
                     </button>
                     <div className="dropdown-menu">
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("Yoga")}
-                      >
-                        Yoga
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("TTC")}
-                      >
-                        TTC
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("PT")}
-                      >
-                        PT
-                      </a>
+                      <label onClick={() => setAction("Yoga")}>Yoga</label>
+                      <label onClick={() => setAction("TTC")}>TTC</label>
+                      <label onClick={() => setAction("PT")}>PT</label>
                     </div>
                   </div>
                 </div>
@@ -920,27 +776,9 @@ const PersonalInformation = () => {
                       {action}
                     </button>
                     <div className="dropdown-menu">
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("Yoga")}
-                      >
-                        Yoga
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("TTC")}
-                      >
-                        TTC
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("PT")}
-                      >
-                        PT
-                      </a>
+                      <label onClick={() => setAction("Yoga")}>Yoga</label>
+                      <label onClick={() => setAction("TTC")}>TTC</label>
+                      <label onClick={() => setAction("PT")}>PT</label>
                     </div>
                   </div>
                 </div>
@@ -963,27 +801,9 @@ const PersonalInformation = () => {
                       {action}
                     </button>
                     <div className="dropdown-menu">
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("Yoga")}
-                      >
-                        Yoga
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("TTC")}
-                      >
-                        TTC
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("PT")}
-                      >
-                        PT
-                      </a>
+                      <label onClick={() => setAction("Yoga")}>Yoga</label>
+                      <label onClick={() => setAction("TTC")}>TTC</label>
+                      <label onClick={() => setAction("PT")}>PT</label>
                     </div>
                   </div>
                 </div>
@@ -1006,27 +826,9 @@ const PersonalInformation = () => {
                       {action}
                     </button>
                     <div className="dropdown-menu">
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("Yoga")}
-                      >
-                        Yoga
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("TTC")}
-                      >
-                        TTC
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("PT")}
-                      >
-                        PT
-                      </a>
+                      <label onClick={() => setAction("Yoga")}>Yoga</label>
+                      <label onClick={() => setAction("TTC")}>TTC</label>
+                      <label onClick={() => setAction("PT")}>PT</label>
                     </div>
                   </div>
                 </div>
@@ -1205,27 +1007,9 @@ const PersonalInformation = () => {
                       {action}
                     </button>
                     <div className="dropdown-menu">
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("Yoga")}
-                      >
-                        Yoga
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("TTC")}
-                      >
-                        TTC
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("PT")}
-                      >
-                        PT
-                      </a>
+                      <label onClick={() => setAction("Yoga")}>Yoga</label>
+                      <label onClick={() => setAction("TTC")}>TTC</label>
+                      <label onClick={() => setAction("PT")}>PT</label>
                     </div>
                   </div>
                 </div>
@@ -1248,27 +1032,9 @@ const PersonalInformation = () => {
                       {action}
                     </button>
                     <div className="dropdown-menu">
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("Yoga")}
-                      >
-                        Yoga
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("TTC")}
-                      >
-                        TTC
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("PT")}
-                      >
-                        PT
-                      </a>
+                      <label onClick={() => setAction("Yoga")}>Yoga</label>
+                      <label onClick={() => setAction("TTC")}>TTC</label>
+                      <label onClick={() => setAction("PT")}>PT</label>
                     </div>
                   </div>
                 </div>
@@ -1291,27 +1057,9 @@ const PersonalInformation = () => {
                       {action}
                     </button>
                     <div className="dropdown-menu">
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("Yoga")}
-                      >
-                        Yoga
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("TTC")}
-                      >
-                        TTC
-                      </a>
-                      <a
-                        className="dropdown-item"
-                        href="#"
-                        onClick={() => setAction("PT")}
-                      >
-                        PT
-                      </a>
+                      <label onClick={() => setAction("Yoga")}>Yoga</label>
+                      <label onClick={() => setAction("TTC")}>TTC</label>
+                      <label onClick={() => setAction("PT")}>PT</label>
                     </div>
                   </div>
                 </div>

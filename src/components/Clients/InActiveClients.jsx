@@ -138,13 +138,9 @@ const InActiveClients = () => {
                     {action}
                   </button>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("Custom Date Range")}
-                    >
+                    <label onClick={() => setAction("Custom Date Range")}>
                       Custom Date Range
-                    </a>
+                    </label>
                   </div>
                 </div>
                 <div>

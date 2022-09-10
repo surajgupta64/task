@@ -27,13 +27,9 @@ const AddBatch = () => {
                   {action}
                 </button>
                 <div class="dropdown-menu">
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Custom Date Range")}
-                  >
+                  <label onClick={() => setAction("Custom Date Range")}>
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
               <div>
@@ -50,13 +46,9 @@ const AddBatch = () => {
                   {action}
                 </button>
                 <div class="dropdown-menu">
-                  <a
-                    class="dropdown-item"
-                    href="#"
-                    onClick={() => setAction("Custom Date Range")}
-                  >
+                  <label onClick={() => setAction("Custom Date Range")}>
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
               <div>
@@ -86,34 +78,30 @@ const AddBatch = () => {
                     {action}
                   </button>
                   <div className="dropdown-menu">
-                    <a
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction("Today")}
                     >
                       Today
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction("Last Seven Days")}
                     >
                       Last Seven Days
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction("Month Till Date")}
                     >
                       Month Till Date
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction("Custom Date Range")}
                     >
                       Custom Date Range
-                    </a>
+                    </label>
                   </div>
                 </div>
               </div>
@@ -203,13 +191,13 @@ const AddBatch = () => {
                 <td className="td-3">01-09-2022</td>
                 <td className="td-2">31-12-2023</td>
                 <td className="td-3">
-                  <a href="#">View</a>
+                  <label className="label">View</label>
                 </td>
                 <td className="td-2">
-                  <a href="#">Active</a>
+                  <label className="label">Active </label>
                 </td>
                 <td className="td-3">
-                  <a href="#">Remove</a>
+                  <label className="label">Remove </label>
                 </td>
               </tr>
             </table>
