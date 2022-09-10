@@ -7,7 +7,6 @@ const Dtask = [
     value: "5",
     css: "sum-lgrey",
     color: "green",
-    color: "green",
   },
   {
     title: "PT expiry",
@@ -200,7 +199,12 @@ const PTDashboard = () => {
                 </div>
                 <div className="col-lg-12">
                   <div className="dbox-summary-1 mg-5">
-                    <h4 className="text-center">Today's Appointment</h4>
+                    <h4
+                      className="text-center"
+                      onClick={() => setAction("suraj")}
+                    >
+                      Today's Appointment
+                    </h4>
                     <div
                       className="d-flex justify-content-center align-items-center"
                       style={{ height: "80%" }}
