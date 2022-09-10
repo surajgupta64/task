@@ -42,34 +42,30 @@ const ServiceReceipt = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <a
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("AllClients")}
                   >
                     All Clients
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Last Seven Days")}
                   >
                     Last Seven Days
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Month Till Date")}
                   >
                     Month Till Date
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Custom Date Range")}
                   >
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
               <div className="btn-group">
@@ -83,34 +79,30 @@ const ServiceReceipt = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <a
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("AllClients")}
                   >
                     All Clients
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Last Seven Days")}
                   >
                     Last Seven Days
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Month Till Date")}
                   >
                     Month Till Date
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Custom Date Range")}
                   >
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
               <div className="btn-group">
@@ -124,34 +116,30 @@ const ServiceReceipt = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <a
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("AllClients")}
                   >
                     All Clients
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Last Seven Days")}
                   >
                     Last Seven Days
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Month Till Date")}
                   >
                     Month Till Date
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Custom Date Range")}
                   >
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
 
@@ -196,17 +184,17 @@ const ServiceReceipt = () => {
                 <td className="td-3">dakshta</td>
                 <td className="td-2">Payments</td>
                 <td className="td-3">
-                  <a href="#">View</a>
+                  <label className="label">View</label>
                 </td>
                 <td className="td-2">206</td>
                 <td className="td-3">
                   <AiOutlineMinusSquare />
                 </td>
                 <td className="td-2">
-                  <a href="#">View</a>
+                  <label className="label">View</label>
                 </td>
                 <td className="td-3">
-                  <a href="#">View</a>
+                  <label className="label">View</label>
                 </td>
                 <td className="td-2">Archive</td>
               </tr>

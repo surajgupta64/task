@@ -146,27 +146,24 @@ const EmployeePerformance = () => {
                     {month}
                   </button>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    <label
+                      className="dropdown-item"
                       onClick={() => setMonth("Jan")}
                     >
                       Jan
-                    </a>
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    </label>
+                    <label
+                      className="dropdown-item"
                       onClick={() => setMonth("Feb")}
                     >
                       Feb
-                    </a>
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    </label>
+                    <label
+                      className="dropdown-item"
                       onClick={() => setMonth("Mar")}
                     >
                       Mar
-                    </a>
+                    </label>
                   </div>
                 </div>
                 <div>Year</div>
@@ -181,27 +178,24 @@ const EmployeePerformance = () => {
                     {year}
                   </button>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    <label
+                      className="dropdown-item"
                       onClick={() => setYear("2022")}
                     >
                       2022
-                    </a>
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    </label>
+                    <label
+                      className="dropdown-item"
                       onClick={() => setYear("2021")}
                     >
                       2021
-                    </a>
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    </label>
+                    <label
+                      className="dropdown-item"
                       onClick={() => setYear("202")}
                     >
                       2020
-                    </a>
+                    </label>
                   </div>
                 </div>
                 <div class="btn-group">

@@ -119,34 +119,30 @@ const Dashboard = () => {
                 {action}
               </button>
               <div class="dropdown-menu">
-                <a
-                  class="dropdown-item"
-                  href="#"
+                <label
+                  className="dropdown-item"
                   onClick={() => setAction("Today")}
                 >
                   Today
-                </a>
-                <a
-                  class="dropdown-item"
-                  href="#"
+                </label>
+                <label
+                  className="dropdown-item"
                   onClick={() => setAction("Last Seven Days")}
                 >
                   Last Seven Days
-                </a>
-                <a
-                  class="dropdown-item"
-                  href="#"
+                </label>
+                <label
+                  className="dropdown-item"
                   onClick={() => setAction("Month Till Date")}
                 >
                   Month Till Date
-                </a>
-                <a
-                  class="dropdown-item"
-                  href="#"
+                </label>
+                <label
+                  className="dropdown-item"
                   onClick={() => setAction("Custom Date Range")}
                 >
                   Custom Date Range
-                </a>
+                </label>
               </div>
             </div>
             <div>

@@ -59,13 +59,12 @@ const AttendanceRegister = () => {
                     {action}
                   </button>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    <label
+                      className="dropdown-item"
                       onClick={() => setAction("Birthday")}
                     >
                       Birthday
-                    </a>
+                    </label>
                   </div>
                 </div>
                 <div>
@@ -105,7 +104,7 @@ const AttendanceRegister = () => {
                 <td className="td-2">9819123291</td>
                 <td className="td-3">ypsoperations@gmail.com</td>
                 <td className="td-2">
-                  <a href="#">View</a>
+                  <label>View</label>
                 </td>
                 <td className="td-3">10/Aug/2021</td>
               </tr>

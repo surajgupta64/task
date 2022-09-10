@@ -62,13 +62,12 @@ const Revenue = () => {
                     {action1}
                   </button>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    <label
+                      className="dropdown-item"
                       onClick={() => setAction("Custom Date Range")}
                     >
                       Custom Date Range
-                    </a>
+                    </label>
                   </div>
                 </div>
                 <div>
@@ -124,13 +123,12 @@ const Revenue = () => {
                     {action}
                   </button>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    <label
+                      className="dropdown-item"
                       onClick={() => setAction("Custom Date Range")}
                     >
                       Custom Date Range
-                    </a>
+                    </label>
                   </div>
                 </div>
                 <div class="btn-group">
@@ -144,13 +142,12 @@ const Revenue = () => {
                     {action}
                   </button>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    <label
+                      className="dropdown-item"
                       onClick={() => setAction("Custom Date Range")}
                     >
                       Custom Date Range
-                    </a>
+                    </label>
                   </div>
                 </div>
                 <div class="btn-group">
@@ -164,13 +161,12 @@ const Revenue = () => {
                     {action}
                   </button>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    <label
+                      className="dropdown-item"
                       onClick={() => setAction("Custom Date Range")}
                     >
                       Custom Date Range
-                    </a>
+                    </label>
                   </div>
                 </div>
                 <div>
@@ -211,17 +207,17 @@ const Revenue = () => {
                 <td className="td-3">dakshta</td>
                 <td className="td-2">Payments</td>
                 <td className="td-3">
-                  <a href="#">View</a>
+                  <label className="label">View</label>
                 </td>
                 <td className="td-2">206</td>
                 <td className="td-3">
                   <AiOutlineMinusSquare />
                 </td>
                 <td className="td-2">
-                  <a href="#">View</a>
+                  <label className="label">View</label>
                 </td>
                 <td className="td-3">
-                  <a href="#">View</a>
+                  <label className="label">View</label>
                 </td>
                 <td className="td-2">Archive</td>
               </tr>

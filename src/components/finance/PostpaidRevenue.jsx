@@ -33,13 +33,12 @@ const PostpaidRevenue = () => {
                     {action}
                   </button>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    <label
+                      className="dropdown-item"
                       onClick={() => setAction("Custom Date Range")}
                     >
                       Custom Date Range
-                    </a>
+                    </label>
                   </div>
                 </div>
                 <div style={{ fontSize: "15px" }}>Year</div>
@@ -54,13 +53,12 @@ const PostpaidRevenue = () => {
                     {action}
                   </button>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    <label
+                      className="dropdown-item"
                       onClick={() => setAction("Custom Date Range")}
                     >
                       Custom Date Range
-                    </a>
+                    </label>
                   </div>
                 </div>
                 <div>
@@ -101,17 +99,17 @@ const PostpaidRevenue = () => {
                 <td className="td-3">dakshta</td>
                 <td className="td-2">Payments</td>
                 <td className="td-3">
-                  <a href="#">View</a>
+                  <label className="label">View</label>
                 </td>
                 <td className="td-2">206</td>
                 <td className="td-3">
                   <AiOutlineMinusSquare />
                 </td>
                 <td className="td-2">
-                  <a href="#">View</a>
+                  <label className="label">View</label>
                 </td>
                 <td className="td-3">
-                  <a href="#">View</a>
+                  <label className="label">View</label>
                 </td>
                 <td className="td-2">Archive</td>
               </tr>

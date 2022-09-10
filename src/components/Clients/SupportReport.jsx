@@ -115,9 +115,24 @@ const SupportReport = () => {
                     {action}
                   </button>
                   <div class="dropdown-menu">
-                    <label onClick={() => setAction("2022")}>2022</label>
-                    <label onClick={() => setAction("2021")}>2021</label>
-                    <label onClick={() => setAction("202")}>2020</label>
+                    <label
+                      className="dropdown-item"
+                      onClick={() => setAction("2022")}
+                    >
+                      2022
+                    </label>
+                    <label
+                      className="dropdown-item"
+                      onClick={() => setAction("2021")}
+                    >
+                      2021
+                    </label>
+                    <label
+                      className="dropdown-item"
+                      onClick={() => setAction("202")}
+                    >
+                      2020
+                    </label>
                   </div>
                 </div>
                 <div>

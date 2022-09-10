@@ -74,13 +74,13 @@ const WorkoutTemplates = () => {
                 <td className="td-2">Branch</td>
                 <td className="td-3">Prabha Yadav</td>
                 <td className="td-2">
-                  <a href="#">Update</a>
+                  <label className="label">Update</label>
                 </td>
                 <td className="td-3">
-                  <a href="#">Add</a>
+                  <label className="label">Add</label>
                 </td>
                 <td className="td-2">
-                  <a href="#">Delete</a>
+                  <label className="label">Delete</label>
                 </td>
               </tr>
             </table>

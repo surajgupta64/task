@@ -31,27 +31,24 @@ const LeadSource = () => {
                     {action1}
                   </button>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    <label
+                      className="dropdown-item"
                       onClick={() => setAction1("Today")}
                     >
                       Today
-                    </a>
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    </label>
+                    <label
+                      className="dropdown-item"
                       onClick={() => setAction1("cardio")}
                     >
                       cardio
-                    </a>
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    </label>
+                    <label
+                      className="dropdown-item"
                       onClick={() => setAction1("other")}
                     >
                       other
-                    </a>
+                    </label>
                   </div>
                 </div>
 

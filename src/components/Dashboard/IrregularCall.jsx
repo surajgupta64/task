@@ -108,20 +108,18 @@ const IrregularCall = () => {
                 {action}
               </button>
               <div className="dropdown-menu">
-                <a
+                <label
                   className="dropdown-item"
-                  href="#"
                   onClick={() => setAction("All Staff")}
                 >
                   All Staff
-                </a>
-                <a
+                </label>
+                <label
                   className="dropdown-item"
-                  href="#"
                   onClick={() => setAction("Riya")}
                 >
                   Riya
-                </a>
+                </label>
               </div>
             </div>
             <div className="btn-group">
@@ -135,20 +133,18 @@ const IrregularCall = () => {
                 {call}
               </button>
               <div className="dropdown-menu">
-                <a
+                <label
                   className="dropdown-item"
-                  href="#"
                   onClick={() => setCall("All Calls")}
                 >
                   All Calls
-                </a>
-                <a
+                </label>
+                <label
                   className="dropdown-item"
-                  href="#"
                   onClick={() => setCall("Missed Calls")}
                 >
                   Missed Calls
-                </a>
+                </label>
               </div>
             </div>
             <div>
@@ -179,27 +175,24 @@ const IrregularCall = () => {
                     {staff}
                   </button>
                   <div class="dropdown-menu">
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    <label
+                      className="dropdown-item"
                       onClick={() => setStaff("Select")}
                     >
                       Select
-                    </a>
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    </label>
+                    <label
+                      className="dropdown-item"
                       onClick={() => setStaff("Send E-mail")}
                     >
                       Send E-mail
-                    </a>
-                    <a
-                      class="dropdown-item"
-                      href="#"
+                    </label>
+                    <label
+                      className="dropdown-item"
                       onClick={() => setStaff("Send SMS")}
                     >
                       Send SMS
-                    </a>
+                    </label>
                   </div>
                 </div>
               </div>

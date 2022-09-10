@@ -103,9 +103,24 @@ const PTRenewedVSLeftClient = () => {
                   {month}
                 </button>
                 <div class="dropdown-menu">
-                  <label onClick={() => setMonth("Jan")}>Jan</label>
-                  <label onClick={() => setMonth("Feb")}>Feb</label>
-                  <label onClick={() => setMonth("Mar")}>Mar</label>
+                  <label
+                    className="dropdown-item"
+                    onClick={() => setMonth("Jan")}
+                  >
+                    Jan
+                  </label>
+                  <label
+                    className="dropdown-item"
+                    onClick={() => setMonth("Feb")}
+                  >
+                    Feb
+                  </label>
+                  <label
+                    className="dropdown-item"
+                    onClick={() => setMonth("Mar")}
+                  >
+                    Mar
+                  </label>
                 </div>
               </div>
               <div>Year</div>
@@ -120,9 +135,24 @@ const PTRenewedVSLeftClient = () => {
                   {year}
                 </button>
                 <div class="dropdown-menu">
-                  <label onClick={() => setYear("2022")}>2022</label>
-                  <label onClick={() => setYear("2021")}>2021</label>
-                  <label onClick={() => setYear("202")}>2020</label>
+                  <label
+                    className="dropdown-item"
+                    onClick={() => setYear("2022")}
+                  >
+                    2022
+                  </label>
+                  <label
+                    className="dropdown-item"
+                    onClick={() => setYear("2021")}
+                  >
+                    2021
+                  </label>
+                  <label
+                    className="dropdown-item"
+                    onClick={() => setYear("202")}
+                  >
+                    2020
+                  </label>
                 </div>
               </div>
               <div>

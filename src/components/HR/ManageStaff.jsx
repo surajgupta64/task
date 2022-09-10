@@ -31,34 +31,30 @@ const ManageStaff = () => {
                     {action1}
                   </button>
                   <div className="dropdown-menu">
-                    <a
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("AllClients")}
                     >
                       All Clients
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("Last Seven Days")}
                     >
                       Last Seven Days
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("Month Till Date")}
                     >
                       Month Till Date
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("Custom Date Range")}
                     >
                       Custom Date Range
-                    </a>
+                    </label>
                   </div>
                 </div>
 
@@ -74,34 +70,30 @@ const ManageStaff = () => {
                     {action1}
                   </button>
                   <div className="dropdown-menu">
-                    <a
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("AllClients")}
                     >
                       All Clients
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("Last Seven Days")}
                     >
                       Last Seven Days
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("Month Till Date")}
                     >
                       Month Till Date
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("Custom Date Range")}
                     >
                       Custom Date Range
-                    </a>
+                    </label>
                   </div>
                 </div>
 
@@ -117,34 +109,30 @@ const ManageStaff = () => {
                     {action1}
                   </button>
                   <div className="dropdown-menu">
-                    <a
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("AllClients")}
                     >
                       All Clients
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("Last Seven Days")}
                     >
                       Last Seven Days
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("Month Till Date")}
                     >
                       Month Till Date
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("Custom Date Range")}
                     >
                       Custom Date Range
-                    </a>
+                    </label>
                   </div>
                 </div>
                 <div>
@@ -199,10 +187,10 @@ const ManageStaff = () => {
                 </td>
                 <td className="td-2">Sales</td>
                 <td className="td-3">
-                  <a href="#">View</a>
+                  <label>View</label>
                 </td>
                 <td className="td-2">
-                  <a href="#">Change</a>
+                  <label>Change</label>
                 </td>
 
                 <td className="td-2">

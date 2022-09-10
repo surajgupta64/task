@@ -43,7 +43,8 @@ const PersonalInformation = () => {
                     height="100px"
                     style={{ borderRadius: "5px" }}
                     src={profile}
-                  ></img>
+                    alt="Profile image"
+                  />
                 </div>
               </div>
               <div className="col-lg-8">

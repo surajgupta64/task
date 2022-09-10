@@ -35,27 +35,24 @@ const Sms = () => {
                     {action1}
                   </button>
                   <div className="dropdown-menu">
-                    <a
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("Select SMS Type")}
                     >
                       Select SMS Type
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("Transactional SMS Bal:0")}
                     >
                       Transactional SMS Bal:0
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("Promotional SMS Bal:0")}
                     >
                       Promotional SMS Bal:0
-                    </a>
+                    </label>
                   </div>
                 </div>
               </div>
@@ -82,34 +79,30 @@ const Sms = () => {
                     {action1}
                   </button>
                   <div className="dropdown-menu">
-                    <a
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("Select")}
                     >
                       Select
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("Last Seven Days")}
                     >
                       Last Seven Days
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("Month Till Date")}
                     >
                       Month Till Date
-                    </a>
-                    <a
+                    </label>
+                    <label
                       className="dropdown-item"
-                      href="#"
                       onClick={() => setAction1("Custom Date Range")}
                     >
                       Custom Date Range
-                    </a>
+                    </label>
                   </div>
                 </div>
               </div>

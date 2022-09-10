@@ -153,34 +153,30 @@ const AllEnquiry = () => {
                   {action}
                 </button>
                 <div class="dropdown-menu">
-                  <a
+                  <label
                     class="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Today")}
                   >
                     Today
-                  </a>
-                  <a
+                  </label>
+                  <label
                     class="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Last Seven Days")}
                   >
                     Last Seven Days
-                  </a>
-                  <a
+                  </label>
+                  <label
                     class="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Month Till Date")}
                   >
                     Month Till Date
-                  </a>
-                  <a
+                  </label>
+                  <label
                     class="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Custom Date Range")}
                   >
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
               <div>

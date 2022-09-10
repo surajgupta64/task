@@ -51,34 +51,30 @@ const CancelledInvoice = () => {
                   {action1}
                 </button>
                 <div className="dropdown-menu">
-                  <a
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Today")}
                   >
                     Today
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Last Seven Days")}
                   >
                     Last Seven Days
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Month Till Date")}
                   >
                     Month Till Date
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Custom Date Range")}
                   >
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
               <div className="btn-group">
@@ -92,34 +88,30 @@ const CancelledInvoice = () => {
                   {action1}
                 </button>
                 <div className="dropdown-menu">
-                  <a
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction1("Today")}
                   >
                     Today
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction1("Last Seven Days")}
                   >
                     Last Seven Days
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction1("Month Till Date")}
                   >
                     Month Till Date
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction1("Custom Date Range")}
                   >
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
             </div>
@@ -153,34 +145,30 @@ const CancelledInvoice = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <a
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("AllClients")}
                   >
                     All Clients
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Last Seven Days")}
                   >
                     Last Seven Days
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Month Till Date")}
                   >
                     Month Till Date
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Custom Date Range")}
                   >
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
               <div className="btn-group">
@@ -194,34 +182,30 @@ const CancelledInvoice = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <a
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("AllClients")}
                   >
                     All Clients
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Last Seven Days")}
                   >
                     Last Seven Days
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Month Till Date")}
                   >
                     Month Till Date
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Custom Date Range")}
                   >
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
               <div className="btn-group">
@@ -235,34 +219,30 @@ const CancelledInvoice = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <a
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("AllClients")}
                   >
                     All Clients
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Last Seven Days")}
                   >
                     Last Seven Days
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Month Till Date")}
                   >
                     Month Till Date
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Custom Date Range")}
                   >
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
               <div className="btn-group">
@@ -276,34 +256,30 @@ const CancelledInvoice = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <a
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Today")}
                   >
                     Today
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Last Seven Days")}
                   >
                     Last Seven Days
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Month Till Date")}
                   >
                     Month Till Date
-                  </a>
-                  <a
+                  </label>
+                  <label
                     className="dropdown-item"
-                    href="#"
                     onClick={() => setAction("Custom Date Range")}
                   >
                     Custom Date Range
-                  </a>
+                  </label>
                 </div>
               </div>
               <div>
@@ -347,17 +323,17 @@ const CancelledInvoice = () => {
                 <td className="td-3">dakshta</td>
                 <td className="td-2">Payments</td>
                 <td className="td-3">
-                  <a href="#">View</a>
+                  <label className="label">View</label>
                 </td>
                 <td className="td-2">206</td>
                 <td className="td-3">
                   <AiOutlineMinusSquare />
                 </td>
                 <td className="td-2">
-                  <a href="#">View</a>
+                  <label className="label">View</label>
                 </td>
                 <td className="td-3">
-                  <a href="#">View</a>
+                  <label className="label">View</label>
                 </td>
                 <td className="td-2">Archive</td>
               </tr>

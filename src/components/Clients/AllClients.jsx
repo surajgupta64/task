@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Navbar from "../Layout/Navbar";
 import "react-calendar/dist/Calendar.css";
-import axios from "axios";
 import { MdOutlineAddBox, MdPhoneMissed } from "react-icons/md";
 import {
   AiOutlineArrowLeft,
@@ -13,11 +12,6 @@ import Table from "../Table";
 const AllClients = () => {
   const [action, setAction] = useState("All Clients");
   const [allClientsData, setAllClientsData] = useState([]);
-  const [TotalM, setTotalM] = useState(187);
-
-  const [ActiveM, setActiveM] = useState(120);
-
-  const [InactiveM, setInactiveM] = useState(67);
 
   const column = [
     /* 
@@ -92,15 +86,6 @@ const AllClients = () => {
     },
   ];
 
-  const fetchData = () => {
-    axios.get(`https://jsonplaceholder.typicode.com/users`).then(() => {
-      setAllClientsData(allClientsData);
-    });
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
-
   return (
     <>
       <Navbar />
@@ -112,20 +97,18 @@ const AllClients = () => {
           <div className="d-flex justify-content-between">
             <div className="d-flex align-items-center" style={{ gap: "30px" }}>
               <div class="btn-group">
-                <div className="mr-3 btn-own4">Total Members : {TotalM}</div>
+                <div className="mr-3 btn-own4">Total Members : 23</div>
               </div>
             </div>
             <div
               className="d-flex align-items-center justify-content-center mt-3"
               style={{ gap: "30px" }}
             >
-              <div className="mr-3 btn-own4">Active Members : {ActiveM}</div>
+              <div className="mr-3 btn-own4">Active Members : 18</div>
             </div>
 
             <div className="d-flex align-items-center" style={{ gap: "20px" }}>
-              <div className="mr-3 btn-own4">
-                Inactive Members : {InactiveM}
-              </div>
+              <div className="mr-3 btn-own4">Inactive Members : 5</div>
             </div>
           </div>
           <br />
@@ -240,16 +223,28 @@ const AllClients = () => {
                     {action}
                   </button>
                   <div className="dropdown-menu">
-                    <label onClick={() => setAction("AllClients")}>
+                    <label
+                      className="dropdown-item"
+                      onClick={() => setAction("AllClients")}
+                    >
                       All Clients
                     </label>
-                    <label onClick={() => setAction("Last Seven Days")}>
+                    <label
+                      className="dropdown-item"
+                      onClick={() => setAction("Last Seven Days")}
+                    >
                       Last Seven Days
                     </label>
-                    <label onClick={() => setAction("Month Till Date")}>
+                    <label
+                      className="dropdown-item"
+                      onClick={() => setAction("Month Till Date")}
+                    >
                       Month Till Date
                     </label>
-                    <label onClick={() => setAction("Custom Date Range")}>
+                    <label
+                      className="dropdown-item"
+                      onClick={() => setAction("Custom Date Range")}
+                    >
                       Custom Date Range
                     </label>
                   </div>
@@ -273,14 +268,28 @@ const AllClients = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <label onClick={() => setAction("Today")}>Today</label>
-                  <label onClick={() => setAction("Last Seven Days")}>
+                  <label
+                    className="dropdown-item"
+                    onClick={() => setAction("Today")}
+                  >
+                    Today
+                  </label>
+                  <label
+                    className="dropdown-item"
+                    onClick={() => setAction("Last Seven Days")}
+                  >
                     Last Seven Days
                   </label>
-                  <label onClick={() => setAction("Month Till Date")}>
+                  <label
+                    className="dropdown-item"
+                    onClick={() => setAction("Month Till Date")}
+                  >
                     Month Till Date
                   </label>
-                  <label onClick={() => setAction("Custom Date Range")}>
+                  <label
+                    className="dropdown-item"
+                    onClick={() => setAction("Custom Date Range")}
+                  >
                     Custom Date Range
                   </label>
                 </div>
@@ -300,14 +309,28 @@ const AllClients = () => {
                   {action}
                 </button>
                 <div className="dropdown-menu">
-                  <label onClick={() => setAction("Today")}>Today</label>
-                  <label onClick={() => setAction("Last Seven Days")}>
+                  <label
+                    className="dropdown-item"
+                    onClick={() => setAction("Today")}
+                  >
+                    Today
+                  </label>
+                  <label
+                    className="dropdown-item"
+                    onClick={() => setAction("Last Seven Days")}
+                  >
                     Last Seven Days
                   </label>
-                  <label onClick={() => setAction("Month Till Date")}>
+                  <label
+                    className="dropdown-item"
+                    onClick={() => setAction("Month Till Date")}
+                  >
                     Month Till Date
                   </label>
-                  <label onClick={() => setAction("Custom Date Range")}>
+                  <label
+                    className="dropdown-item"
+                    onClick={() => setAction("Custom Date Range")}
+                  >
                     Custom Date Range
                   </label>
                 </div>

@@ -53,7 +53,7 @@ const Assessment = () => {
                 <td className="td-2">1</td>
                 <td className="td-3">yoga ttc</td>
                 <td className="td-2">
-                  <a href="#">Update</a>
+                  <label className="label">Update</label>
                 </td>
                 <td className="td-3">
                   <div className="bg-icon d-flex justify-content-center align-items-center">
