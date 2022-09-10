@@ -1,37 +1,13 @@
 import React, { useState } from "react";
 import Navbar from "../Layout/Navbar";
-import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import {
-  MdOutlineCheckBoxOutlineBlank,
-  MdOutlineCheckBox,
-  MdOutlineAddBox,
-} from "react-icons/md";
-import {
-  AiOutlineMinusSquare,
-  AiOutlineDelete,
-  AiFillEdit,
-} from "react-icons/ai";
-import { HiOutlinePencilAlt } from "react-icons/hi";
-import { FiMail } from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa";
-import {
-  BsCalendarEvent,
-  BsFilePostFill,
-  BsCalendarCheck,
-} from "react-icons/bs";
+import { MdOutlineCheckBoxOutlineBlank } from "react-icons/md";
+import { AiOutlineMinusSquare } from "react-icons/ai";
 const CancelledInvoice = () => {
   const [action, setAction] = useState("All Client");
-  
+
   const [action1, setAction1] = useState("Today");
 
-  const [TotalM, setTotalM] = useState(187);
-
-  const [ActiveM, setActiveM] = useState(120);
-
-  const [InactiveM, setInactiveM] = useState(67);
-  const [value, onChange] = useState(new Date());
-  const [openCal, setCal] = useState(false);
   return (
     <>
       <Navbar />
@@ -43,11 +19,15 @@ const CancelledInvoice = () => {
           <div className="d-flex justify-content-between mt-10">
             <div className="d-flex" style={{ gap: "30px" }}>
               <div class="btn-group">
-                <input type="text" className="btn btn-own" placeholder="Search by name" />
+                <input
+                  type="text"
+                  className="btn btn-own"
+                  placeholder="Search by name"
+                />
               </div>
-                <div>
-                  <button className="btn btn-primary">Go</button>
-                </div>
+              <div>
+                <button className="btn btn-primary">Go</button>
+              </div>
             </div>
             <div className="d-flex" style={{ gap: "20px" }}>
               <div class="btn-group">
@@ -60,7 +40,6 @@ const CancelledInvoice = () => {
           <br />
           <div className="d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center" style={{ gap: "30px" }}>
-              
               <div className="btn-group">
                 <button
                   type="button"
@@ -148,148 +127,144 @@ const CancelledInvoice = () => {
             <div
               className="d-flex align-items-center justify-content-center mt-3"
               style={{ gap: "30px" }}
-            >
-              
-            </div>
+            ></div>
 
-            <div 
-            >
-              
-              <button className="btn btn_enquiry " style={{ marginRight: "5px" }} >New Invoice</button>
+            <div>
+              <button
+                className="btn btn_enquiry "
+                style={{ marginRight: "5px" }}
+              >
+                New Invoice
+              </button>
               <button className="btn btn_enquiry">Export Excel</button>
             </div>
           </div>
           <br />
           <div className="d-flex justify-content-between">
-            
-
-            <div
-              className="d-flex mt-3"
-              style={{ gap: "30px" }}
-            >
-                <div className="btn-group">
-                  <button
-                    type="button"
-                    className="btn btn-own dropdown-toggle"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
+            <div className="d-flex mt-3" style={{ gap: "30px" }}>
+              <div className="btn-group">
+                <button
+                  type="button"
+                  className="btn btn-own dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  {action}
+                </button>
+                <div className="dropdown-menu">
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => setAction("AllClients")}
                   >
-                    {action}
-                  </button>
-                  <div className="dropdown-menu">
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("AllClients")}
-                    >
-                      All Clients
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("Last Seven Days")}
-                    >
-                      Last Seven Days
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("Month Till Date")}
-                    >
-                      Month Till Date
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("Custom Date Range")}
-                    >
-                      Custom Date Range
-                    </a>
-                  </div>
-                </div>
-                <div className="btn-group">
-                  <button
-                    type="button"
-                    className="btn btn-own dropdown-toggle"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
+                    All Clients
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => setAction("Last Seven Days")}
                   >
-                    {action}
-                  </button>
-                  <div className="dropdown-menu">
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("AllClients")}
-                    >
-                      All Clients
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("Last Seven Days")}
-                    >
-                      Last Seven Days
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("Month Till Date")}
-                    >
-                      Month Till Date
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("Custom Date Range")}
-                    >
-                      Custom Date Range
-                    </a>
-                  </div>
-                </div>
-                <div className="btn-group">
-                  <button
-                    type="button"
-                    className="btn btn-own dropdown-toggle"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
+                    Last Seven Days
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => setAction("Month Till Date")}
                   >
-                    {action}
-                  </button>
-                  <div className="dropdown-menu">
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("AllClients")}
-                    >
-                      All Clients
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("Last Seven Days")}
-                    >
-                      Last Seven Days
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("Month Till Date")}
-                    >
-                      Month Till Date
-                    </a>
-                    <a
-                      className="dropdown-item"
-                      href="#"
-                      onClick={() => setAction("Custom Date Range")}
-                    >
-                      Custom Date Range
-                    </a>
-                  </div>
+                    Month Till Date
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => setAction("Custom Date Range")}
+                  >
+                    Custom Date Range
+                  </a>
                 </div>
+              </div>
+              <div className="btn-group">
+                <button
+                  type="button"
+                  className="btn btn-own dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  {action}
+                </button>
+                <div className="dropdown-menu">
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => setAction("AllClients")}
+                  >
+                    All Clients
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => setAction("Last Seven Days")}
+                  >
+                    Last Seven Days
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => setAction("Month Till Date")}
+                  >
+                    Month Till Date
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => setAction("Custom Date Range")}
+                  >
+                    Custom Date Range
+                  </a>
+                </div>
+              </div>
+              <div className="btn-group">
+                <button
+                  type="button"
+                  className="btn btn-own dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  {action}
+                </button>
+                <div className="dropdown-menu">
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => setAction("AllClients")}
+                  >
+                    All Clients
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => setAction("Last Seven Days")}
+                  >
+                    Last Seven Days
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => setAction("Month Till Date")}
+                  >
+                    Month Till Date
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => setAction("Custom Date Range")}
+                  >
+                    Custom Date Range
+                  </a>
+                </div>
+              </div>
               <div className="btn-group">
                 <button
                   type="button"
@@ -332,11 +307,9 @@ const CancelledInvoice = () => {
                 </div>
               </div>
               <div>
-                  <button className="btn btn-primary">Go</button>
+                <button className="btn btn-primary">Go</button>
               </div>
             </div>
-
-            
           </div>
         </div>
         <div className="dbox-10">

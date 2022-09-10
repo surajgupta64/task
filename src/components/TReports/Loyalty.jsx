@@ -1,38 +1,11 @@
 import React, { useState } from "react";
 import Navbar from "../Layout/Navbar";
-import { FiSearch } from "react-icons/fi";
-import { HiUserAdd } from "react-icons/hi";
-import { FaSwatchbook } from "react-icons/fa";
-import {
-  BsCalendarEvent,
-  BsFilePostFill,
-  BsCalendarCheck,
-} from "react-icons/bs";
-import { ImTelegram } from "react-icons/im";
-import { CgProfile } from "react-icons/cg";
-import { TbBrandBooking } from "react-icons/tb";
-import { RiSpeedLine } from "react-icons/ri";
+import { BsCalendarCheck } from "react-icons/bs";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import {
-  MdOutlineCheckBoxOutlineBlank,
-  MdOutlineCheckBox,
-  MdOutlineAddBox,
-} from "react-icons/md";
-import {
-  AiOutlineMinusSquare,
-  AiOutlineDelete,
-  AiFillEdit,
-} from "react-icons/ai";
-import { HiOutlinePencilAlt } from "react-icons/hi";
-import { FiMail } from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa";
+import { MdOutlineCheckBoxOutlineBlank } from "react-icons/md";
 
 const Loyalty = () => {
-  const [toggle, setToggle] = useState(true);
-  const [action, setAction] = useState("2021");
-
-  const [action1, setAction1] = useState("Select");
   const [value, onChange] = useState(new Date());
   const [openCal, setCal] = useState(false);
 

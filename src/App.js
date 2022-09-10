@@ -25,7 +25,6 @@ import ClientBiometric from './components/Clients/ClientBiometric'
 import Email from './components/Marketing/Email'
 import Sms from './components/Marketing/Sms'
 import PushNotification from './components/Marketing/PushNotification'
-import AttendanceRegister from './components/HR/AttendanceRegister'
 import BiometricStaff from './components/HR/BiometricStaff'
 import StaffBirthday from './components/HR/StaffBirthday'
 import PTDashboard from './components/Training/PTDeshboard'
@@ -52,6 +51,42 @@ import PostpaidRevenue from './components/finance/PostpaidRevenue'
 import Offer from './components/Marketing/Offer'
 import Unqualified from './components/Marketing/Unqualified'
 import EmployeePerformance from './components/Dashboard/EmplyoeePerformance'
+import PTPerformance from './components/Dashboard/PTPerformance'
+import CorporatePerformance from './components/Dashboard/CorporatePerformance'
+import Trial from './components/Dashboard/Trial'
+import CustomerReview from './components/Marketing/CustomerReview'
+import Turf from './components/Inventory/Turf'
+import Store from './components/Inventory/Store'
+import StockReport from './components/Inventory/StockReport'
+import ProductReorderAlertReport from './components/Inventory/ProductReorderAlertReport'
+import POS from './components/Inventory/POS'
+import CrossSellCall from './components/Dashboard/CrossSellCall'
+import FeedbackCalls from './components/Dashboard/FeedbackCalls'
+import CourtesyCall from './components/Dashboard/CourtesyCall'
+import Upcoming from './components/Clients/Upcoming'
+import GroupTraining from './components/Clients/GroupTraining'
+import Referrers from './components/Clients/Referrers'
+import IrregularMember from './components/Clients/IrregularMember'
+import Gender from './components/Clients/Gender'
+import RenewalsVSLeftClinet from './components/Clients/RenewalsVSLeftClinet'
+import UpgradeReport from './components/Clients/UpgradeReport'
+import CheckInOut from './components/Clients/CheckInOut'
+import FreezeDateChange from './components/Clients/FreezeDateChange'
+import ServiceTransferReport from './components/Clients/ServiceTransferReport'
+import BatchReport from './components/Clients/BatchReport'
+import BirthdayAnniversaryReport from './components/Clients/BirthdayAnniversaryReport'
+import AttendanceRegister from './components/Clients/AttendanceRegister'
+import AttendanceDetails from './components/Clients/AttendanceDetails'
+import MembershipRetention from './components/Clients/MembershipRetention'
+import CancellationReport from './components/Clients/CancellationReport'
+import TransferReport from './components/Clients/TransferReport'
+import SupportReport from './components/Clients/SupportReport'
+import NewClient from './components/Clients/NewClient'
+import RenewedClient from './components/Clients/RenewedClient'
+import Membership from './components/Clients/Membership'
+import EnquiryForm from './components/AddDetails/EnquiryForm'
+import AllRight from './components/Master/AllRight'
+import MembershipForm from './components/AddDetails/MembershipForm'
 const App = () => {
   return (
     <>
@@ -72,6 +107,24 @@ const App = () => {
               <FollowUps />
             </Sidebar>
           } />
+          <Route exact path='enquiryForm/form' element={
+            <Sidebar>
+              <EnquiryForm />
+            </Sidebar>
+          } />
+          <Route exact path='membershipForm/form' element={
+            <Sidebar>
+              <MembershipForm />
+            </Sidebar>
+          } />
+
+
+
+          <Route exact path='/trial' element={
+            <Sidebar>
+              <Trial />
+            </Sidebar>
+          } />
           <Route exact path='/followups/welcomecall' element={
             <Sidebar>
               <ReminderCall />
@@ -85,6 +138,16 @@ const App = () => {
           <Route exact path='/followups/upgradecall' element={
             <Sidebar>
               <UpgradeCall />
+            </Sidebar>
+          } />
+          <Route exact path='/followups/cross_sell' element={
+            <Sidebar>
+              <CrossSellCall />
+            </Sidebar>
+          } />
+          <Route exact path='/followups/feedback' element={
+            <Sidebar>
+              <FeedbackCalls />
             </Sidebar>
           } />
           <Route exact path='/followups/renewalcall' element={
@@ -102,6 +165,11 @@ const App = () => {
               <InboundCall />
             </Sidebar>
           } />
+          <Route exact path='/followups/courtesy' element={
+            <Sidebar>
+              <CourtesyCall />
+            </Sidebar>
+          } />
           <Route exact path='/followups/birthday&annversarycall' element={
             <Sidebar>
               <BdayAnnver />
@@ -116,6 +184,11 @@ const App = () => {
           <Route exact path='/active/clients' element={
             <Sidebar>
               <ActiveClients />
+            </Sidebar>
+          } />
+          <Route exact path='/upcoming/clients' element={
+            <Sidebar>
+              <Upcoming />
             </Sidebar>
           } />
           <Route exact path='/inactive/clients' element={
@@ -138,12 +211,113 @@ const App = () => {
               <Deit />
             </Sidebar>
           } />
-          <Route exact path='/batch/clients' element={
+
+          <Route exact path='/group/clients' element={
+            <Sidebar>
+              <GroupTraining />
+            </Sidebar>
+          } />
+          <Route exact path='/allBatch/clients' element={
             <Sidebar>
               <Batch />
             </Sidebar>
           } />
-          
+          <Route exact path='/referrers/clients' element={
+            <Sidebar>
+              <Referrers />
+            </Sidebar>
+          } />
+          <Route exact path='/irregularMember/clients' element={
+            <Sidebar>
+              <IrregularMember />
+            </Sidebar>
+          } />
+          <Route exact path='/gender/clients' element={
+            <Sidebar>
+              <Gender />
+            </Sidebar>
+          } />
+          <Route exact path='/renewalsVSLeftClinet/clients' element={
+            <Sidebar>
+              <RenewalsVSLeftClinet />
+            </Sidebar>
+          } />
+          <Route exact path='/upgradeReport/clients' element={
+            <Sidebar>
+              <UpgradeReport />
+            </Sidebar>
+          } />
+          <Route exact path='/checkInOut/clients' element={
+            <Sidebar>
+              <CheckInOut />
+            </Sidebar>
+          } />
+          <Route exact path='/freezeDateChange/clients' element={
+            <Sidebar>
+              <FreezeDateChange />
+            </Sidebar>
+          } />
+          <Route exact path='/serviceTransferReport/clients' element={
+            <Sidebar>
+              <ServiceTransferReport />
+            </Sidebar>
+          } />
+          <Route exact path='/batchReport/clients' element={
+            <Sidebar>
+              <BatchReport />
+            </Sidebar>
+          } />
+          <Route exact path='/birthdayAnniversaryReport/clients' element={
+            <Sidebar>
+              <BirthdayAnniversaryReport />
+            </Sidebar>
+          } />
+          <Route exact path='/attendanceRegister/clients' element={
+            <Sidebar>
+              <AttendanceRegister />
+            </Sidebar>
+          } />
+          <Route exact path='/attendanceDetails/clients' element={
+            <Sidebar>
+              <AttendanceDetails />
+            </Sidebar>
+          } />
+          <Route exact path='/membershipRetention/clients' element={
+            <Sidebar>
+              <MembershipRetention />
+            </Sidebar>
+          } />
+          <Route exact path='/cancellationReport/clients' element={
+            <Sidebar>
+              <CancellationReport />
+            </Sidebar>
+          } />
+          <Route exact path='/transferReport/clients' element={
+            <Sidebar>
+              <TransferReport />
+            </Sidebar>
+          } />
+          <Route exact path='/supportReport/clients' element={
+            <Sidebar>
+              <SupportReport />
+            </Sidebar>
+          } />
+          <Route exact path='/newClient/clients' element={
+            <Sidebar>
+              <NewClient />
+            </Sidebar>
+          } />
+          <Route exact path='/renewedClient/clients' element={
+            <Sidebar>
+              <RenewedClient />
+            </Sidebar>
+          } />
+          <Route exact path='/membership/clients' element={
+            <Sidebar>
+              <Membership />
+            </Sidebar>
+          } />
+
           <Route exact path='/addBatch/clients' element={
             <Sidebar>
               <AddBatch />
@@ -164,7 +338,7 @@ const App = () => {
               <AttendanceRegister />
             </Sidebar>
           } />
-          
+
           <Route exact path='/staffBiometric/HR' element={
             <Sidebar>
               <BiometricStaff />
@@ -200,9 +374,50 @@ const App = () => {
               <Offer />
             </Sidebar>
           } />
+          <Route exact path='/customer_Review/marketing' element={
+            <Sidebar>
+              <CustomerReview />
+            </Sidebar>
+          } />
           <Route exact path='/unqualified/marketing' element={
             <Sidebar>
               <Unqualified />
+            </Sidebar>
+          } />
+          {/*inverntory */}
+          <Route exact path="/turf/inverntory" element={
+            <Sidebar>
+              <Turf />
+            </Sidebar>
+          } />
+          <Route exact path="/store/inverntory" element={
+            <Sidebar>
+              <Store />
+            </Sidebar>
+          } />
+          <Route exact path="/pos/inverntory" element={
+            <Sidebar>
+              <POS />
+            </Sidebar>
+          } />
+          <Route exact path="/stock_report/inverntory" element={
+            <Sidebar>
+              <StockReport />
+            </Sidebar>
+          } />
+          <Route exact path="/product_reorder_alert_report/inverntory" element={
+            <Sidebar>
+              <ProductReorderAlertReport />
+            </Sidebar>
+          } />
+          <Route exact path="/product_list/inverntory" element={
+            <Sidebar>
+              <ProductReorderAlertReport />
+            </Sidebar>
+          } />
+          <Route exact path="/product_setting/inverntory" element={
+            <Sidebar>
+              <ProductReorderAlertReport />
             </Sidebar>
           } />
           <Route exact path='/ptDeshboard/training' element={
@@ -210,7 +425,7 @@ const App = () => {
               <PTDashboard />
             </Sidebar>
           } />
-          
+
           <Route exact path='/viewExercises/training' element={
             <Sidebar>
               <ViewExercises />
@@ -261,7 +476,7 @@ const App = () => {
               <Loyalty />
             </Sidebar>
           } />
-          
+
           <Route exact path='/allInvoice/finance' element={
             <Sidebar>
               <AllInvoice />
@@ -302,9 +517,9 @@ const App = () => {
               <PostpaidRevenue />
             </Sidebar>
           } />
-          <Route exact path='/empDashboard/ptPerfomance' element={
+          <Route exact path='/empDashboard/ptPerformance' element={
             <Sidebar>
-              <PTDashboard />
+              <PTPerformance />
             </Sidebar>
           } />
           <Route exact path='/empDashboard/empPerfomance' element={
@@ -312,12 +527,22 @@ const App = () => {
               <EmployeePerformance />
             </Sidebar>
           } />
-          
+          <Route exact path='/empDashboard/corPerformance' element={
+            <Sidebar>
+              <CorporatePerformance />
+            </Sidebar>
+          } />
+          <Route exact path='/allright/master' element={
+            <Sidebar>
+              <AllRight />
+            </Sidebar>
+          } />
+
 
         </Routes>
       </BrowserRouter>
     </>
   )
 }
- 
+
 export default App;

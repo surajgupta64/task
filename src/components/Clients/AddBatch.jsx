@@ -1,35 +1,11 @@
 import React, { useState } from "react";
 import Navbar from "../Layout/Navbar";
-import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import {
-  MdOutlineCheckBoxOutlineBlank,
-  MdOutlineCheckBox,
-  MdOutlineAddBox,
-} from "react-icons/md";
-import {
-  AiOutlineMinusSquare,
-  AiOutlineDelete,
-  AiFillEdit,
-} from "react-icons/ai";
-import { HiOutlinePencilAlt } from "react-icons/hi";
-import { FiMail } from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa";
-import {
-  BsCalendarEvent,
-  BsFilePostFill,
-  BsCalendarCheck,
-} from "react-icons/bs";
+import { MdOutlineCheckBoxOutlineBlank } from "react-icons/md";
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 const AddBatch = () => {
   const [action, setAction] = useState("All Clients");
 
-  const [TotalM, setTotalM] = useState(187);
-
-  const [ActiveM, setActiveM] = useState(120);
-
-  const [InactiveM, setInactiveM] = useState(67);
-  const [value, onChange] = useState(new Date());
-  const [openCal, setCal] = useState(false);
   return (
     <>
       <Navbar />
@@ -39,119 +15,151 @@ const AddBatch = () => {
             Add Batch
           </div>
           <div className="d-flex justify-content-between mt-10">
-          <div className="d-flex align-items-center" style={{ gap: "30px" }}>
-            <div class="btn-group">
-                <button type="button" class="btn btn-own dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div className="d-flex align-items-center" style={{ gap: "30px" }}>
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-own dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
                   {action}
                 </button>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#" onClick={() => setAction("Custom Date Range")}>Custom Date Range</a>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    onClick={() => setAction("Custom Date Range")}
+                  >
+                    Custom Date Range
+                  </a>
                 </div>
               </div>
               <div>
                 <button className="btn btn-primary">Edit</button>
               </div>
               <div class="btn-group">
-                <button type="button" class="btn btn-own dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button
+                  type="button"
+                  class="btn btn-own dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
                   {action}
                 </button>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#" onClick={() => setAction("Custom Date Range")}>Custom Date Range</a>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    onClick={() => setAction("Custom Date Range")}
+                  >
+                    Custom Date Range
+                  </a>
                 </div>
               </div>
               <div>
                 <button className="btn btn-primary">Go</button>
               </div>
             </div>
-            
+
             <div className="d-flex align-items-center" style={{ gap: "20px" }}>
-            <button style={{ width:"100%" }} className="btn btn_enquiry">Add Batch</button>
+              <button style={{ width: "100%" }} className="btn btn_enquiry">
+                Add Batch
+              </button>
             </div>
           </div>
           <br />
           <div className="d-flex justify-content-between align-items-center">
-            
-          <div className="d-flex" style={{ gap: "30px" }}>
-    
-    <div className="d-flex align-items-center">
-    <div className="mr-3">Communicate:</div>
-    <div className="btn-group">
-      <button
-        type="button"
-        className="btn btn-own dropdown-toggle"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        {action}
-      </button>
-      <div className="dropdown-menu">
-        <a
-          className="dropdown-item"
-          href="#"
-          onClick={() => setAction("Today")}
-        >
-          Today
-        </a>
-        <a
-          className="dropdown-item"
-          href="#"
-          onClick={() => setAction("Last Seven Days")}
-        >
-          Last Seven Days
-        </a>
-        <a
-          className="dropdown-item"
-          href="#"
-          onClick={() => setAction("Month Till Date")}
-        >
-          Month Till Date
-        </a>
-        <a
-          className="dropdown-item"
-          href="#"
-          onClick={() => setAction("Custom Date Range")}
-        >
-          Custom Date Range
-        </a>
-      </div>
-    </div>
-    </div>
-  
-  </div>
-            
+            <div className="d-flex" style={{ gap: "30px" }}>
+              <div className="d-flex align-items-center">
+                <div className="mr-3">Communicate:</div>
+                <div className="btn-group">
+                  <button
+                    type="button"
+                    className="btn btn-own dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    {action}
+                  </button>
+                  <div className="dropdown-menu">
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => setAction("Today")}
+                    >
+                      Today
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => setAction("Last Seven Days")}
+                    >
+                      Last Seven Days
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => setAction("Month Till Date")}
+                    >
+                      Month Till Date
+                    </a>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      onClick={() => setAction("Custom Date Range")}
+                    >
+                      Custom Date Range
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <div 
-            >
-              
-              <button className="btn btn_enquiry " style={{ marginRight: "5px" }} >Export Excel</button>
+            <div>
+              <button
+                className="btn btn_enquiry "
+                style={{ marginRight: "5px" }}
+              >
+                Export Excel
+              </button>
               <button className="btn btn_enquiry">View Assessment</button>
             </div>
           </div>
           <br />
           <div className="d-flex justify-content-between">
-            
-
-
-            <div className="d-flex align-items-center justify-content-center " style={{ gap: "20px" }}>
+            <div
+              className="d-flex align-items-center justify-content-center "
+              style={{ gap: "20px" }}
+            >
               <div className="mr-3"> Attendance</div>
               <div className="btn-group">
                 <input type="date" placeholder="Date" className="btn btn-own" />
               </div>
               <div className="mr-3"> Check In</div>
               <div className="btn-group">
-                <input type="time" placeholder="Check In" className="btn btn-own" />
+                <input
+                  type="time"
+                  placeholder="Check In"
+                  className="btn btn-own"
+                />
               </div>
-              
+
               <div className="mr-3"> Check In</div>
               <div className="btn-group">
-                <input type="time" placeholder="Check Out"  className="btn btn-own" />
+                <input
+                  type="time"
+                  placeholder="Check Out"
+                  className="btn btn-own"
+                />
               </div>
-              
+
               <div>
                 <button className="btn btn-primary">Submit</button>
               </div>
-
             </div>
           </div>
         </div>
@@ -191,20 +199,32 @@ const AddBatch = () => {
                 <td className="td-3">Bhavi Kadakia</td>
                 <td className="td-2"></td>
                 <td className="td-3">6146842970</td>
-                <td className="td-2">12 Plus 2 months complimentary
-                </td>
+                <td className="td-2">12 Plus 2 months complimentary</td>
                 <td className="td-3">01-09-2022</td>
-                <td className="td-2">31-12-2023
-                </td>
+                <td className="td-2">31-12-2023</td>
                 <td className="td-3">
                   <a href="#">View</a>
                 </td>
                 <td className="td-2">
                   <a href="#">Active</a>
                 </td>
-                <td className="td-3"><a href="#">Remove</a></td>
+                <td className="td-3">
+                  <a href="#">Remove</a>
+                </td>
               </tr>
             </table>
+          </div>
+
+          <div className="d-flex align-items-center text-center justify-content-center mt-3">
+            <button className="btn btn_enquiry">
+              <AiOutlineArrowLeft />
+              Previous
+            </button>
+            <p style={{ padding: "20px", marginTop: "10px" }}>Page 1 to 10</p>
+            <button className="btn btn_enquiry">
+              Next
+              <AiOutlineArrowRight />
+            </button>
           </div>
         </div>
       </div>

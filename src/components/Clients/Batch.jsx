@@ -1,57 +1,98 @@
 import React, { useState } from "react";
 import Navbar from "../Layout/Navbar";
-import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
+import { MdOutlineAddBox, MdPhoneMissed } from "react-icons/md";
 import {
-  MdOutlineCheckBoxOutlineBlank,
-  MdOutlineCheckBox,
-  MdOutlineAddBox,
-} from "react-icons/md";
-import {
-  AiOutlineMinusSquare,
-  AiOutlineDelete,
-  AiFillEdit,
+  AiOutlineInfoCircle,
+  AiOutlineArrowLeft,
+  AiOutlineArrowRight,
 } from "react-icons/ai";
-import { HiOutlinePencilAlt } from "react-icons/hi";
-import { FiMail } from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa";
-import {
-  BsCalendarEvent,
-  BsFilePostFill,
-  BsCalendarCheck,
-} from "react-icons/bs";
+import Table from "../Table";
 const Batch = () => {
   const [action, setAction] = useState("All Clients");
 
-  const [TotalM, setTotalM] = useState(187);
+  const column = [
+    /* 
+        value: keyword for normal value passing
+        btn: keyword for button
+        btn1 to btn4: keyword for component passing
+        lebel: keyword for anchor tag
+        Note: please don't pass empty values or perameters
+        */
+    { heading: "S.No", value: "id" },
+    { heading: "Member Id", value: "MemberId" },
+    { heading: "Assign Date & Time", value: "date_time" },
+    { heading: "Member Name", label: "member_name" },
+    { heading: "Mobile", value: "mobile" },
+    { heading: "Service Name", value: "service_name" },
+    { heading: "Service Variation Name", value: "variation_name" },
+    { heading: "Expiry Date", value: "expiry_date" },
+    {
+      heading: "Info",
+      btn1: (
+        <div className="bg-icon d-flex justify-content-center align-items-center">
+          <AiOutlineInfoCircle />
+        </div>
+      ),
+    },
+    { heading: "Renew", btn: "Renew" },
+    {
+      heading: "Call Status",
+      btn1: (
+        <div className="bg-icon d-flex justify-content-center align-items-center">
+          <MdOutlineAddBox />
+        </div>
+      ),
+      btn2: (
+        <div className="bg-icon d-flex justify-content-center align-items-center">
+          <MdPhoneMissed />
+        </div>
+      ),
+    },
+    { heading: "Sales Rep", value: "sales_rep" },
+    { heading: "PT Trainer", value: "pt_trainer" },
+    { heading: "Trainer", value: "trainer" },
+    { heading: "Staff Name", value: "staff_name" },
+  ];
 
-  const [ActiveM, setActiveM] = useState(120);
+  const Users = [
+    {
+      id: 1,
+      date_time: "25-08-2022 03:00 PM",
+      member_name: "Nayana Nagrecha",
+      mobile: "9136123476",
+      service_name: "Yoga",
+      variation_name: "3 Months",
+      expiry_date: "31-08-2022",
+      sales_rep: "Sejal Ganatra",
+      pt_trainer: "-",
+      trainer: "Prabha Yadav",
+      staff_name: "Sejal Ganatra",
+    },
+    {
+      id: 2,
+      date_time: "25-08-2022 03:00 PM",
+      member_name: "Nayana Nagrecha",
+      mobile: "9136123476",
+      service_name: "Yoga",
+      variation_name: "3 Months",
+      expiry_date: "31-08-2022",
+      sales_rep: "Sejal Ganatra",
+      pt_trainer: "-",
+      trainer: "Prabha Yadav",
+      staff_name: "Sejal Ganatra",
+    },
+  ];
 
-  const [InactiveM, setInactiveM] = useState(67);
-  const [value, onChange] = useState(new Date());
-  const [openCal, setCal] = useState(false);
   return (
     <>
       <Navbar />
       <div className="page_reducer_1">
         <div className="dbox-10">
           <div className="text-center" style={{ fontSize: "23px" }}>
-            Batch
+            All Batch
           </div>
-          <div className="d-flex justify-content-between">
-            <div className="d-flex" style={{ gap: "30px" }}>
-              <div class="btn-group">
-                <div className="mr-3">Total Members : {TotalM}</div>
-                <div className="mr-3">Active Members : {ActiveM}</div>
-                <div className="mr-3">Inactive Members : {InactiveM}</div>
-              </div>
-            </div>
-            <div className="d-flex align-items-center" style={{ gap: "20px" }}>
-            <button style={{ width:"100%" }} className="btn btn_enquiry">Import Member Details</button>
-            </div>
-          </div>
-          <br />
-          <div className="d-flex justify-content-between align-items-center">
+          <div className="d-flex justify-content-between align-items-center mt-2">
             <div className="d-flex align-items-center" style={{ gap: "30px" }}>
               <div className="mr-3">Filter by:</div>
               <div className="btn-group">
@@ -98,7 +139,7 @@ const Batch = () => {
             </div>
 
             <div
-              className="d-flex align-items-center justify-content-center mt-3"
+              className="d-flex align-items-center justify-content-center"
               style={{ gap: "30px" }}
             >
               <div className="mr-3">Sub-filter:</div>
@@ -145,16 +186,19 @@ const Batch = () => {
               </div>
             </div>
 
-            <div 
-            >
-              
-              <button className="btn btn_enquiry " style={{ marginRight: "5px" }} >Add to Mailer</button>
+            <div>
+              <button
+                className="btn btn_enquiry "
+                style={{ marginRight: "5px" }}
+              >
+                Add to Mailer
+              </button>
               <button className="btn btn_enquiry">Export Clients</button>
             </div>
           </div>
           <br />
           <div className="d-flex justify-content-between">
-            <div className="d-flex" >
+            <div className="d-flex">
               <div className="d-flex align-items-center">
                 <div className="btn-group">
                   <button
@@ -201,7 +245,7 @@ const Batch = () => {
             </div>
 
             <div
-              className="d-flex align-items-center justify-content-center mt-3"
+              className="d-flex align-items-center justify-content-center "
               style={{ gap: "30px" }}
             >
               <div className="mr-3">Communicate:</div>
@@ -292,58 +336,29 @@ const Batch = () => {
                 </div>
               </div>
             </div>
+
+            <div className="d-flex align-items-center" style={{ gap: "20px" }}>
+              <button style={{ width: "100%" }} className="btn btn_enquiry">
+                Import Member Details
+              </button>
+            </div>
           </div>
         </div>
         <div className="dbox-10">
           <div>
-            <table
-              className="table_client_2"
-              border="1"
-              cellSpacing="0"
-              width="100%"
-            >
-              <tr className="tr-client text-center">
-                <td className="td-2">
-                  <div>
-                    <MdOutlineCheckBoxOutlineBlank />
-                  </div>
-                </td>
-                <td className="td-2">S.No</td>
-                <td className="td-3">Profile</td>
-                <td className="td-2">Billing</td>
-                <td className="td-3">Service Card</td>
-                <td className="td-2">Attendance ID/ Checkin</td>
-                <td className="td-3">Call Log</td>
-                <td className="td-2">Appointment</td>
-                <td className="td-3">Training</td>
-                <td className="td-2">Archive</td>
-              </tr>
+            <Table data={Users} column={column} />
+          </div>
 
-              <tr className="tr-client text-center">
-                <td className="td-2">
-                  <div>
-                    <MdOutlineCheckBoxOutlineBlank />
-                  </div>
-                </td>
-                <td className="td-2">1</td>
-                <td className="td-3">dakshta</td>
-                <td className="td-2">Payments</td>
-                <td className="td-3">
-                  <a href="#">View</a>
-                </td>
-                <td className="td-2">206</td>
-                <td className="td-3">
-                  <AiOutlineMinusSquare />
-                </td>
-                <td className="td-2">
-                  <a href="#">View</a>
-                </td>
-                <td className="td-3">
-                  <a href="#">View</a>
-                </td>
-                <td className="td-2">Archive</td>
-              </tr>
-            </table>
+          <div className="d-flex align-items-center text-center justify-content-center mt-3">
+            <button className="btn btn_enquiry">
+              <AiOutlineArrowLeft />
+              Previous
+            </button>
+            <p style={{ padding: "20px", marginTop: "10px" }}>Page 1 to 10</p>
+            <button className="btn btn_enquiry">
+              Next
+              <AiOutlineArrowRight />
+            </button>
           </div>
         </div>
       </div>

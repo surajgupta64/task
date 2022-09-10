@@ -1,35 +1,11 @@
 import React, { useState } from "react";
 import Navbar from "../Layout/Navbar";
-import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import {
-  MdOutlineCheckBoxOutlineBlank,
-  MdOutlineCheckBox,
-  MdOutlineAddBox,
-} from "react-icons/md";
-import {
-  AiOutlineMinusSquare,
-  AiOutlineDelete,
-  AiFillEdit,
-} from "react-icons/ai";
-import { HiOutlinePencilAlt } from "react-icons/hi";
-import { FiMail } from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa";
-import {
-  BsCalendarEvent,
-  BsFilePostFill,
-  BsCalendarCheck,
-} from "react-icons/bs";
+import { MdOutlineCheckBoxOutlineBlank } from "react-icons/md";
+import { AiOutlineMinusSquare } from "react-icons/ai";
 const Unqualified = () => {
   const [action, setAction] = useState("All Clients");
 
-  const [TotalM, setTotalM] = useState(187);
-
-  const [ActiveM, setActiveM] = useState(120);
-
-  const [InactiveM, setInactiveM] = useState(67);
-  const [value, onChange] = useState(new Date());
-  const [openCal, setCal] = useState(false);
   return (
     <>
       <Navbar />
@@ -83,22 +59,23 @@ const Unqualified = () => {
                 </div>
               </div>
               <div>
-              <button className="btn btn-primary">Export Clients</button>
+                <button className="btn btn-primary">Export Clients</button>
               </div>
-
             </div>
 
-            
-            <div 
-            >
-              
-              <button className="btn btn_enquiry " style={{ marginRight: "5px" }} >Add to Mailer</button>
+            <div>
+              <button
+                className="btn btn_enquiry "
+                style={{ marginRight: "5px" }}
+              >
+                Add to Mailer
+              </button>
               <button className="btn btn_enquiry">Export Clients</button>
             </div>
           </div>
           <br />
           <div className="d-flex justify-content-between">
-            <div className="d-flex" >
+            <div className="d-flex">
               <div className="d-flex align-items-center">
                 <div className="btn-group">
                   <button

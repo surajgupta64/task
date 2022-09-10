@@ -1,31 +1,9 @@
 import React, { useState } from "react";
 import Navbar from "../Layout/Navbar";
-import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import {
-  MdOutlineCheckBoxOutlineBlank,
-  MdOutlineCheckBox,
-  MdOutlineAddBox,
-} from "react-icons/md";
-import {
-  AiOutlineMinusSquare,
-  AiOutlineDelete,
-  AiFillEdit,
-} from "react-icons/ai";
-import { HiOutlinePencilAlt } from "react-icons/hi";
-import { FiMail } from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa";
-import {
-  BsCalendarEvent,
-  BsFilePostFill,
-  BsCalendarCheck,
-} from "react-icons/bs";
 const Email = () => {
-  const [action, setAction] = useState("Select");
   const [options, setOptions] = useState("All Members");
   const [action1, setAction1] = useState("Select SMS Type");
-  const [value, onChange] = useState(new Date());
-  const [openCal, setCal] = useState(false);
 
   const onRadioChange = (e) => {
     setOptions(e.target.value);
@@ -35,15 +13,12 @@ const Email = () => {
       <Navbar />
       <div className="page_reducer_1">
         <div className="dbox-10 ">
-        <div className="text-center" style={{gap: "30px"}}>
-                Email
-              </div>
+          <div className="text-center" style={{ gap: "30px" }}>
+            E-Mail Marketing
+          </div>
           <div className="row">
             <div className="col-lg-4">
-              <div
-                className="d-flex right"
-                style={{ gap: "30px" }}
-              >
+              <div className="d-flex right" style={{ gap: "30px" }}>
                 <div className="mr-3">Gateway:</div>
               </div>
             </div>
@@ -87,10 +62,7 @@ const Email = () => {
             </div>
 
             <div className="col-lg-4">
-              <div
-                className="d-flex right"
-                style={{ gap: "30px" }}
-              >
+              <div className="d-flex right" style={{ gap: "30px" }}>
                 <div className="mr-3">Subject:</div>
               </div>
             </div>
@@ -168,114 +140,93 @@ const Email = () => {
                 style={{ gap: "30px" }}
               ></div>
             </div>
-            
+
             <div className="col-lg-8">
               <div
                 className="d-flex align-items-center justify-content-center mt-3"
                 style={{ gap: "30px" }}
               >
                 <label>
-              <input
-                type="radio"
-                value="All Members"
-                checked={options === "All Members"}
-                onChange={onRadioChange}
-              />
-              <span>All Members </span>
-            </label>
+                  <input
+                    type="radio"
+                    value="All Members"
+                    checked={options === "All Members"}
+                    onChange={onRadioChange}
+                  />
+                  <span>All Members </span>
+                </label>
 
-            <label style={{ marginLeft: "15px" }}>
-              <input
-                type="radio"
-                value="Active Members"
-                checked={options === "Active Members"}
-                onChange={onRadioChange}
-              />
-              <span>Active Members </span>
-            </label>
+                <label style={{ marginLeft: "15px" }}>
+                  <input
+                    type="radio"
+                    value="Active Members"
+                    checked={options === "Active Members"}
+                    onChange={onRadioChange}
+                  />
+                  <span>Active Members </span>
+                </label>
 
-            <label style={{ marginLeft: "15px" }}>
-              <input
-                type="radio"
-                value="Inactive Members"
-                checked={options === "Inactive Members"}
-                onChange={onRadioChange}
-              />
-              <span>Inactive Members </span>
-            </label>
+                <label style={{ marginLeft: "15px" }}>
+                  <input
+                    type="radio"
+                    value="Inactive Members"
+                    checked={options === "Inactive Members"}
+                    onChange={onRadioChange}
+                  />
+                  <span>Inactive Members </span>
+                </label>
 
-            <label style={{ marginLeft: "15px" }}>
-              <input
-                type="radio"
-                value="Suspect List"
-                checked={options === "Suspect List"}
-                onChange={onRadioChange}
-              />
-              <span>Suspect List </span>
-            </label>
+                <label style={{ marginLeft: "15px" }}>
+                  <input
+                    type="radio"
+                    value="Suspect List"
+                    checked={options === "Suspect List"}
+                    onChange={onRadioChange}
+                  />
+                  <span>Suspect List </span>
+                </label>
 
-            <label style={{ marginLeft: "15px" }}>
-              <input
-                type="radio"
-                value="Enquiry List"
-                checked={options === "Enquiry List"}
-                onChange={onRadioChange}
-              />
-              <span>Enquiry List </span>
-            </label>
+                <label style={{ marginLeft: "15px" }}>
+                  <input
+                    type="radio"
+                    value="Enquiry List"
+                    checked={options === "Enquiry List"}
+                    onChange={onRadioChange}
+                  />
+                  <span>Enquiry List </span>
+                </label>
               </div>
             </div>
 
-
             <div className="col-lg-4">
-              <div
-                className="d-flex right"
-                style={{ gap: "30px" }}
-              >
-                
-              <div className="mr-3">Message:</div>
+              <div className="d-flex right" style={{ gap: "30px" }}>
+                <div className="mr-3">Message:</div>
               </div>
             </div>
             <div className="col-lg-8">
-              <div
-                className="d-flex  mt-3"
-                style={{ gap: "30px" }}
-              >
+              <div className="d-flex  mt-3" style={{ gap: "30px" }}>
                 <div className="btn-group">
-              <textarea
-                style={{ minHeight: "100px", minWidth: "700px" }}
-                placeholder="Type Email"
-              ></textarea>
-            </div>
+                  <textarea
+                    style={{ minHeight: "100px", minWidth: "700px" }}
+                    placeholder="Type Email"
+                  ></textarea>
+                </div>
               </div>
             </div>
             <div className="col-lg-4">
               <div
                 className="d-flex align-items-center justify-content-center mt-3"
                 style={{ gap: "30px" }}
-              >
-                
-              </div>
+              ></div>
             </div>
             <div className="col-lg-8">
-              <div
-                className="d-flex mt-3"
-                style={{ gap: "30px" }}
-              >
-                
-            <div className="btn-group">
-              <button className="btn btn-primary">Send</button>
-            </div>
+              <div className="d-flex mt-3" style={{ gap: "30px" }}>
+                <div className="btn-group">
+                  <button className="btn btn-primary">Send</button>
+                </div>
               </div>
             </div>
-
-
-
-
           </div>
-
-          
-          
         </div>
       </div>
     </>

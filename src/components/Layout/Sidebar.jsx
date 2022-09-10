@@ -1,32 +1,39 @@
 import React, { useState } from "react";
 import { IoIosChatbubbles } from "react-icons/io";
-import { MdAdminPanelSettings, MdOutlineUpgrade } from "react-icons/md";
+import { MdAdminPanelSettings } from "react-icons/md";
 import { IoMdContacts } from "react-icons/io";
 import { GoRepoClone } from "react-icons/go";
-import { FiSettings } from "react-icons/fi";
+import { FiSettings, FiTarget } from "react-icons/fi";
 import { BsFillCaretRightFill } from "react-icons/bs";
 import { FaUserTie } from "react-icons/fa";
 import { SiGoogleads } from "react-icons/si";
-import { MdOutlineDashboardCustomize, MdAutorenew } from "react-icons/md";
+import { MdOutlineDashboardCustomize } from "react-icons/md";
 import { Link } from "react-router-dom";
-import {
-  BsFillCaretDownFill,
-  BsFillCaretUpFill,
-  BsFillCreditCard2FrontFill,
-} from "react-icons/bs";
+import { BsFillCaretDownFill, BsFillCaretUpFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
-import { IoCallSharp } from "react-icons/io5";
-import { FaUserSlash, FaBirthdayCake } from "react-icons/fa";
-import { AiOutlineUserSwitch } from "react-icons/ai";
-import { GiOrganigram } from "react-icons/gi";
-import { SiHandshake } from "react-icons/si";
-import { CustomGroups, Data, DropDown,DropDown2, Engagement, Finance, HR, Marketing, ServiceCategory, ValidityBased } from "./ImportComp";
-import CommunicationDropdawn from "./CommunicationDropdawn";
+import {
+  ClientDataReport,
+  ClientManagementMaster,
+  ClientServicesReport,
+  DataFromApp,
+  DropDown,
+  DropDown2,
+  ExpenseMaster,
+  Finance,
+  GeneralMaster,
+  HR,
+  IntergartionsMaster,
+  InventoryMaster,
+  MarketingMaster,
+  ServiceCategory,
+  StaffManagementMaster,
+  TraningMaster,
+} from "./ImportComp";
+import { RiMoneyDollarCircleFill } from "react-icons/ri";
 const Sidebar = ({ children }) => {
   const [down, setDown] = useState(0);
   const [option, setOption] = useState(0);
   const [submenu, setSubmenu] = useState(0);
-  const [active, setActive] = useState(false);
   const navigate = useNavigate();
   return (
     <div className="main-container">
@@ -41,7 +48,64 @@ const Sidebar = ({ children }) => {
             </Link>
           </div>
         </div>
-
+        <div className="sidebar_content" style={{ position: "relative" }}>
+          <Link to="" style={{ textDecoration: "none", color: "#fff" }}>
+            <div className="d-flex align-items-center justify-content-between">
+              <div>
+                <div className="sidebar_icons d-flex justify-content-center ">
+                  <FiTarget />
+                </div>
+                <div className="sidebar_title text-center">
+                  Target
+                  <br />
+                  Dashboard
+                </div>
+              </div>
+              {option === 10 ? (
+                <div
+                  onClick={() => {
+                    setOption(0);
+                  }}
+                >
+                  <BsFillCaretRightFill />
+                </div>
+              ) : (
+                <div
+                  onClick={() => {
+                    setOption(10);
+                  }}
+                >
+                  <BsFillCaretRightFill />
+                </div>
+              )}
+            </div>
+          </Link>
+          <div className={option === 10 ? "options" : "hide"}>
+            <ul className="category-sb">
+              <li>
+                <div className="d-flex justify-content-between">
+                  <div>
+                    <b>Employee Dashbord</b>
+                  </div>
+                  <div>
+                    {down === 2 ? (
+                      <div onClick={() => setDown(0)}>
+                        <BsFillCaretUpFill />
+                      </div>
+                    ) : (
+                      <div onClick={() => setDown(2)}>
+                        <BsFillCaretDownFill />
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className={down === 2 ? "" : "hide"}>
+                  <DropDown2 />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div className="sidebar_content" style={{ position: "relative" }}>
           <Link to="" style={{ textDecoration: "none", color: "#fff" }}>
             <div className="d-flex align-items-center justify-content-between">
@@ -75,14 +139,16 @@ const Sidebar = ({ children }) => {
               <li onClick={() => navigate("/all/enquiry")}>
                 <b>All Enquiry</b>
               </li>
-              <li onClick={() => navigate("/all/enquiry")}>
+              <li onClick={() => navigate("/trial")}>
                 <b>Trails</b>
               </li>
+              <li onClick={() => navigate("/followups")}>
+                <b>Follow ups</b>
+              </li>
               <li>
-                
                 <div className="d-flex justify-content-between">
                   <div>
-                  <b>Follow ups</b>
+                    <b>Remainder Call</b>
                   </div>
                   <div>
                     {down === 1 ? (
@@ -98,28 +164,6 @@ const Sidebar = ({ children }) => {
                 </div>
                 <div className={down === 1 ? "" : "hide"}>
                   <DropDown />
-                </div>
-              </li>
-              <li>
-              
-                <div className="d-flex justify-content-between">
-                  <div>
-                  <b>Employee Dashbord</b>
-                  </div>
-                  <div>
-                    {down === 2 ? (
-                      <div onClick={() => setDown(0)}>
-                        <BsFillCaretUpFill />
-                      </div>
-                    ) : (
-                      <div onClick={() => setDown(2)}>
-                        <BsFillCaretDownFill />
-                      </div>
-                    )}
-                  </div>
-                </div>
-                <div className={down === 2 ? "" : "hide"}>
-                  <DropDown2 />
                 </div>
               </li>
             </ul>
@@ -155,34 +199,31 @@ const Sidebar = ({ children }) => {
           </Link>
           <div className={option === 2 ? "options" : "hide"}>
             <ul className="category-sb">
-              <li>
-              <div className="d-flex justify-content-between">
-                  <div>
-                    <b>Validity Based</b>
-                  </div>
-                  <div>
-                    {submenu ===7 ? (
-                      <div onClick={() => setSubmenu(0)}>
-                        <BsFillCaretUpFill />
-                      </div>
-                    ) : (
-                      <div onClick={() => setSubmenu(7)}>
-                        <BsFillCaretDownFill />
-                      </div>
-                    )}
-                  </div>
-                </div>
-                <div className={submenu===7 ? "" : "hide"}>
-                  <ValidityBased />
-                </div>
+              <li onClick={() => navigate("/all/clients")}>
+                <b>All Clients</b>
+              </li>
+              <li onClick={() => navigate("/active/clients")}>
+                <b>Active Clients</b>
+              </li>
+              <li onClick={() => navigate("/upcoming/clients")}>
+                <b>Upcoming Renewals Clients</b>
+              </li>
+              <li onClick={() => navigate("/inactive/clients")}>
+                <b>Expriry Clients</b>
               </li>
               <li>
-              <div className="d-flex justify-content-between">
+                <div className="d-flex justify-content-between">
                   <div>
-                    <b>Service Category</b>
+                    <b
+                      onClick={() =>
+                        submenu === 8 ? setSubmenu(0) : setSubmenu(8)
+                      }
+                    >
+                      All Services
+                    </b>
                   </div>
                   <div>
-                    {submenu ===8 ? (
+                    {submenu === 8 ? (
                       <div onClick={() => setSubmenu(0)}>
                         <BsFillCaretUpFill />
                       </div>
@@ -193,17 +234,23 @@ const Sidebar = ({ children }) => {
                     )}
                   </div>
                 </div>
-                <div className={submenu===8 ? "" : "hide"}>
+                <div className={submenu === 8 ? "" : "hide"}>
                   <ServiceCategory />
                 </div>
               </li>
               <li>
-              <div className="d-flex justify-content-between">
+                <div className="d-flex justify-content-between">
                   <div>
-                    <b>Custom Groups</b>
+                    <b
+                      onClick={() =>
+                        submenu === 9 ? setSubmenu(0) : setSubmenu(9)
+                      }
+                    >
+                      Client Services Report
+                    </b>
                   </div>
                   <div>
-                    {submenu ===9 ? (
+                    {submenu === 9 ? (
                       <div onClick={() => setSubmenu(0)}>
                         <BsFillCaretUpFill />
                       </div>
@@ -214,21 +261,24 @@ const Sidebar = ({ children }) => {
                     )}
                   </div>
                 </div>
-                <div className={submenu===9 ? "" : "hide"}>
-                  <CustomGroups />
+                <div className={submenu === 9 ? "" : "hide"}>
+                  <ClientServicesReport />
                 </div>
               </li>
+              {/* 
               <li onClick={() => navigate("/inactive/clients")}>
                 <b>Attendance Register</b>
               </li>
               <li onClick={() => navigate("/clientbiometric/clients")}>
                 <b>Client Bio-metric</b>
-              </li>
+              </li> */}
 
               <li>
                 <div className="d-flex justify-content-between">
                   <div>
-                    <b>Reminder Calls</b>
+                    <b onClick={() => (down === 2 ? setDown(0) : setDown(2))}>
+                      Client Data Report
+                    </b>
                   </div>
                   <div>
                     {down === 2 ? (
@@ -243,7 +293,7 @@ const Sidebar = ({ children }) => {
                   </div>
                 </div>
                 <div className={down === 2 ? "" : "hide"}>
-                  <DropDown />
+                  <ClientDataReport />
                 </div>
               </li>
             </ul>
@@ -279,137 +329,50 @@ const Sidebar = ({ children }) => {
           </Link>
           <div className={option === 3 ? "options" : "hide"}>
             <ul className="category-sb">
-              <li>
-              <div className="d-flex justify-content-between">
-                  <div>
-                    <b>Communication</b>
-                  </div>
-                  <div>
-                    {submenu ===3 ? (
-                      <div onClick={() => setSubmenu(0)}>
-                        <BsFillCaretUpFill />
-                      </div>
-                    ) : (
-                      <div onClick={() => setSubmenu(3)}>
-                        <BsFillCaretDownFill />
-                      </div>
-                    )}
-                  </div>
-                </div>
-                <div className={submenu===3 ? "" : "hide"}>
-                  <CommunicationDropdawn />
-                </div>
+              <li onClick={() => navigate("/email/marketing")}>
+                <b>E-Mail Marketing</b>
               </li>
-              <li>
-                
-              <div className="d-flex justify-content-between">
-                  <div>
-                    <b>Value Added</b>
-                  </div>
-                  <div>
-                    {submenu ===17 ? (
-                      <div onClick={() => setSubmenu(0)}>
-                        <BsFillCaretUpFill />
-                      </div>
-                    ) : (
-                      <div onClick={() => setSubmenu(17)}>
-                        <BsFillCaretDownFill />
-                      </div>
-                    )}
-                  </div>
-                </div>
-                <div className={submenu===17 ? "" : "hide"}>
-                  
-              <Marketing />
-                </div>
+              <li onClick={() => navigate("/sms/marketing")}>
+                <b>SMS Marketing</b>
               </li>
-              <li>
-              <div className="d-flex justify-content-between">
-                  <div>
-                    <b>Engagement</b>
-                  </div>
-                  <div>
-                    {submenu ===4 ? (
-                      <div onClick={() => setSubmenu(0)}>
-                        <BsFillCaretUpFill />
-                      </div>
-                    ) : (
-                      <div onClick={() => setSubmenu(4)}>
-                        <BsFillCaretDownFill />
-                      </div>
-                    )}
-                  </div>
-                </div>
-                <div className={submenu===4 ? "" : "hide"}>
-                  <Engagement />
-                </div>
+              <li onClick={() => navigate("/pushnotification/marketing")}>
+                <b>Push Marketing</b>
               </li>
-              <li>
-              <div className="d-flex justify-content-between">
-                  <div>
-                    <b>Data</b>
-                  </div>
-                  <div>
-                    {submenu ===5 ? (
-                      <div onClick={() => setSubmenu(0)}>
-                        <BsFillCaretUpFill />
-                      </div>
-                    ) : (
-                      <div onClick={() => setSubmenu(5)}>
-                        <BsFillCaretDownFill />
-                      </div>
-                    )}
-                  </div>
-                </div>
-                <div className={submenu===5 ? "" : "hide"}>
-                  <Data />
-                </div>
-
+              <li onClick={() => navigate("/offer/marketing")}>
+                <b>Offers Master</b>
               </li>
-              <li>
-              <div className="d-flex justify-content-between">
-                  <div>
-                    <b>Promotion</b>
-                  </div>
-                  <div>
-                    {submenu ===6 ? (
-                      <div onClick={() => setSubmenu(0)}>
-                        <BsFillCaretUpFill />
-                      </div>
-                    ) : (
-                      <div onClick={() => setSubmenu(6)}>
-                        <BsFillCaretDownFill />
-                      </div>
-                    )}
-                  </div>
-                </div>
-                <div className={submenu===6 ? "" : "hide"}>
-                  <CommunicationDropdawn />
-                </div>
+              <li onClick={() => navigate("/customer_review/marketing")}>
+                <b>Customer Reviews</b>
               </li>
-              
-              <li onClick={() => navigate("/inactive/clients")}>
-                <b>Staff Substitution</b>
+              <li onClick={() => navigate("/pushnotification/marketing")}>
+                <b>Bulk Mailer Data</b>
+              </li>
+              <li onClick={() => navigate("/pushnotification/marketing")}>
+                <b>Bulk Calling Data</b>
               </li>
               <li>
                 <div className="d-flex justify-content-between">
                   <div>
-                    <b>Reminder Calls</b>
+                    <b
+                      onClick={() => (down === 100 ? setDown(0) : setDown(100))}
+                    >
+                      Data From App
+                    </b>
                   </div>
                   <div>
-                    {down === 3 ? (
+                    {down === 100 ? (
                       <div onClick={() => setDown(0)}>
                         <BsFillCaretUpFill />
                       </div>
                     ) : (
-                      <div onClick={() => setDown(3)}>
+                      <div onClick={() => setDown(100)}>
                         <BsFillCaretDownFill />
                       </div>
                     )}
                   </div>
                 </div>
-                <div className={down === 3 ? "" : "hide"}>
-                  <DropDown />
+                <div className={down === 100 ? "" : "hide"}>
+                  <DataFromApp />
                 </div>
               </li>
             </ul>
@@ -420,7 +383,7 @@ const Sidebar = ({ children }) => {
             <div className="d-flex align-items-center justify-content-between">
               <div>
                 <div className="sidebar_icons d-flex justify-content-center ">
-                  <IoIosChatbubbles />
+                  <GoRepoClone />
                 </div>
                 <div className="sidebar_title text-center">Inverntory</div>
               </div>
@@ -445,21 +408,30 @@ const Sidebar = ({ children }) => {
           </Link>
           <div className={option === 4 ? "options" : "hide"}>
             <ul className="category-sb">
-              <li>
-                <Link
-                  style={{ textDecoration: "none", color: "#000" }}
-                  to="/all/enquiry"
-                >
-                  <b>Stock Movement</b>
-                </Link>
+              <li onClick={() => navigate("/turf/inverntory")}>
+                <b>Turf</b>
               </li>
-              <li>
-                <Link
-                  style={{ textDecoration: "none", color: "#000" }}
-                  to="/all/enquiry"
-                >
-                  <b>Product Reorder Alert</b>
-                </Link>
+              <li onClick={() => navigate("/store/inverntory")}>
+                <b>Store</b>
+              </li>
+              <li onClick={() => navigate("/pos/inverntory")}>
+                <b>POS (Product)</b>
+              </li>
+              <li onClick={() => navigate("/stock_report/inverntory")}>
+                <b>Stock Report</b>
+              </li>
+              <li
+                onClick={() =>
+                  navigate("/product_reorder_alert_report/inverntory")
+                }
+              >
+                <b>Product Reorder Alert Report</b>
+              </li>
+              <li onClick={() => navigate("/product_list/inverntory")}>
+                <b>Product List</b>
+              </li>
+              <li onClick={() => navigate("/product_setting/inverntory")}>
+                <b>Product Setting</b>
               </li>
             </ul>
           </div>
@@ -469,7 +441,7 @@ const Sidebar = ({ children }) => {
             <div className="d-flex align-items-center justify-content-between">
               <div>
                 <div className="sidebar_icons d-flex justify-content-center ">
-                  <IoMdContacts />
+                  <RiMoneyDollarCircleFill />
                 </div>
                 <div className="sidebar_title text-center">Finance</div>
               </div>
@@ -494,13 +466,13 @@ const Sidebar = ({ children }) => {
           </Link>
           <div className={option === 5 ? "options" : "hide"}>
             <ul className="category-sb">
-            <li>
-              <div className="d-flex justify-content-between">
+              <li>
+                <div className="d-flex justify-content-between">
                   <div>
                     <b>Finance</b>
                   </div>
                   <div>
-                    {submenu ===12 ? (
+                    {submenu === 12 ? (
                       <div onClick={() => setSubmenu(0)}>
                         <BsFillCaretUpFill />
                       </div>
@@ -511,11 +483,10 @@ const Sidebar = ({ children }) => {
                     )}
                   </div>
                 </div>
-                <div className={submenu===12 ? "" : "hide"}>
+                <div className={submenu === 12 ? "" : "hide"}>
                   <Finance />
                 </div>
               </li>
-              
             </ul>
           </div>
         </div>
@@ -549,13 +520,37 @@ const Sidebar = ({ children }) => {
           </Link>
           <div className={option === 6 ? "options" : "hide"}>
             <ul className="category-sb">
-            <li>
-              <div className="d-flex justify-content-between">
+              <li onClick={() => navigate("/turf/inverntory")}>
+                <b>Emp Rights Access</b>
+              </li>
+              <li onClick={() => navigate("/turf/inverntory")}>
+                <b>EMP Attedance Register</b>
+              </li>
+              <li onClick={() => navigate("/turf/inverntory")}>
+                <b>Biometric Emp</b>
+              </li>
+              <li onClick={() => navigate("/turf/inverntory")}>
+                <b>Emp Indexation Check List</b>
+              </li>
+              <li onClick={() => navigate("/turf/inverntory")}>
+                <b>Holidays List</b>
+              </li>
+              <li onClick={() => navigate("/turf/inverntory")}>
+                <b>Emp Of Documents </b>
+              </li>
+              <li onClick={() => navigate("/turf/inverntory")}>
+                <b>EMP Payrol Setup</b>
+              </li>
+              <li onClick={() => navigate("/turf/inverntory")}>
+                <b>EMP Bday Listing</b>
+              </li>
+              <li>
+                <div className="d-flex justify-content-between">
                   <div>
-                    <b>HR</b>
+                    <b>HR Report</b>
                   </div>
                   <div>
-                    {submenu ===11 ? (
+                    {submenu === 11 ? (
                       <div onClick={() => setSubmenu(0)}>
                         <BsFillCaretUpFill />
                       </div>
@@ -566,7 +561,7 @@ const Sidebar = ({ children }) => {
                     )}
                   </div>
                 </div>
-                <div className={submenu===11 ? "" : "hide"}>
+                <div className={submenu === 11 ? "" : "hide"}>
                   <HR />
                 </div>
               </li>
@@ -594,7 +589,7 @@ const Sidebar = ({ children }) => {
             </ul>
           </div>
         </div>
-        <div className="sidebar_content" style={{ position: "relative" }}>
+        {/* <div className="sidebar_content" style={{ position: "relative" }}>
           <Link to="" style={{ textDecoration: "none", color: "#fff" }}>
             <div className="d-flex align-items-center justify-content-between">
               <div>
@@ -624,13 +619,13 @@ const Sidebar = ({ children }) => {
           </Link>
           <div className={option === 7 ? "options" : "hide"}>
             <ul className="category-sb">
-            <li>
-              <div className="d-flex justify-content-between">
+              <li>
+                <div className="d-flex justify-content-between">
                   <div>
                     <b>Marketing</b>
                   </div>
                   <div>
-                    {submenu ===10 ? (
+                    {submenu === 10 ? (
                       <div onClick={() => setSubmenu(0)}>
                         <BsFillCaretUpFill />
                       </div>
@@ -641,14 +636,13 @@ const Sidebar = ({ children }) => {
                     )}
                   </div>
                 </div>
-                <div className={submenu===10 ? "" : "hide"}>
+                <div className={submenu === 10 ? "" : "hide"}>
                   <Marketing />
                 </div>
               </li>
-              
             </ul>
           </div>
-        </div>
+        </div> */}
         <div className="sidebar_content" style={{ position: "relative" }}>
           <Link to="" style={{ textDecoration: "none", color: "#fff" }}>
             <div className="d-flex align-items-center justify-content-between">
@@ -656,7 +650,7 @@ const Sidebar = ({ children }) => {
                 <div className="sidebar_icons d-flex justify-content-center ">
                   <MdAdminPanelSettings />
                 </div>
-                <div className="sidebar_title text-center">Training</div>
+                <div className="sidebar_title text-center">Fitness</div>
               </div>
               {option === 8 ? (
                 <div
@@ -729,7 +723,7 @@ const Sidebar = ({ children }) => {
                 <div className="sidebar_icons d-flex justify-content-center ">
                   <FiSettings />
                 </div>
-                <div className="sidebar_title text-center">Setting</div>
+                <div className="sidebar_title text-center">Masters</div>
               </div>
               {option === 9 ? (
                 <div
@@ -750,31 +744,175 @@ const Sidebar = ({ children }) => {
               )}
             </div>
           </Link>
-          <div className={option === 9 ? "options-1" : "hide"}>
+          <div className={option === 9 ? "options" : "hide"}>
             <ul className="category-sb">
               <li>
-                <Link
-                  style={{ textDecoration: "none", color: "#000" }}
-                  to="/all/enquiry"
-                >
-                  <b>All Enquiry</b>
-                </Link>
+                <div className="d-flex justify-content-between">
+                  <div>
+                    <b>General</b>
+                  </div>
+                  <div>
+                    {down === 98 ? (
+                      <div onClick={() => setDown(0)}>
+                        <BsFillCaretUpFill />
+                      </div>
+                    ) : (
+                      <div onClick={() => setDown(98)}>
+                        <BsFillCaretDownFill />
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className={down === 98 ? "" : "hide"}>
+                  <GeneralMaster />
+                </div>
               </li>
               <li>
-                <Link
-                  style={{ textDecoration: "none", color: "#000" }}
-                  to="/all/enquiry"
-                >
-                  <b>All Enquiry</b>
-                </Link>
+                <div className="d-flex justify-content-between">
+                  <div>
+                    <b>Marketing</b>
+                  </div>
+                  <div>
+                    {down === 97 ? (
+                      <div onClick={() => setDown(0)}>
+                        <BsFillCaretUpFill />
+                      </div>
+                    ) : (
+                      <div onClick={() => setDown(97)}>
+                        <BsFillCaretDownFill />
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className={down === 97 ? "" : "hide"}>
+                  <MarketingMaster />
+                </div>
               </li>
               <li>
-                <Link
-                  style={{ textDecoration: "none", color: "#000" }}
-                  to="/all/enquiry"
-                >
-                  <b>All Enquiry</b>
-                </Link>
+                <div className="d-flex justify-content-between">
+                  <div>
+                    <b>Client Management</b>
+                  </div>
+                  <div>
+                    {down === 96 ? (
+                      <div onClick={() => setDown(0)}>
+                        <BsFillCaretUpFill />
+                      </div>
+                    ) : (
+                      <div onClick={() => setDown(96)}>
+                        <BsFillCaretDownFill />
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className={down === 96 ? "" : "hide"}>
+                  <ClientManagementMaster />
+                </div>
+              </li>
+              <li>
+                <div className="d-flex justify-content-between">
+                  <div>
+                    <b>Traning</b>
+                  </div>
+                  <div>
+                    {down === 95 ? (
+                      <div onClick={() => setDown(0)}>
+                        <BsFillCaretUpFill />
+                      </div>
+                    ) : (
+                      <div onClick={() => setDown(95)}>
+                        <BsFillCaretDownFill />
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className={down === 95 ? "" : "hide"}>
+                  <TraningMaster />
+                </div>
+              </li>
+              <li>
+                <div className="d-flex justify-content-between">
+                  <div>
+                    <b>Staff Management</b>
+                  </div>
+                  <div>
+                    {down === 94 ? (
+                      <div onClick={() => setDown(0)}>
+                        <BsFillCaretUpFill />
+                      </div>
+                    ) : (
+                      <div onClick={() => setDown(94)}>
+                        <BsFillCaretDownFill />
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className={down === 94 ? "" : "hide"}>
+                  <StaffManagementMaster />
+                </div>
+              </li>
+              <li>
+                <div className="d-flex justify-content-between">
+                  <div>
+                    <b>Inventory</b>
+                  </div>
+                  <div>
+                    {down === 93 ? (
+                      <div onClick={() => setDown(0)}>
+                        <BsFillCaretUpFill />
+                      </div>
+                    ) : (
+                      <div onClick={() => setDown(93)}>
+                        <BsFillCaretDownFill />
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className={down === 93 ? "" : "hide"}>
+                  <InventoryMaster />
+                </div>
+              </li>
+              <li>
+                <div className="d-flex justify-content-between">
+                  <div>
+                    <b>Expense</b>
+                  </div>
+                  <div>
+                    {down === 92 ? (
+                      <div onClick={() => setDown(0)}>
+                        <BsFillCaretUpFill />
+                      </div>
+                    ) : (
+                      <div onClick={() => setDown(92)}>
+                        <BsFillCaretDownFill />
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className={down === 92 ? "" : "hide"}>
+                  <ExpenseMaster />
+                </div>
+              </li>
+              <li>
+                <div className="d-flex justify-content-between">
+                  <div>
+                    <b>Intergartions</b>
+                  </div>
+                  <div>
+                    {down === 91 ? (
+                      <div onClick={() => setDown(0)}>
+                        <BsFillCaretUpFill />
+                      </div>
+                    ) : (
+                      <div onClick={() => setDown(91)}>
+                        <BsFillCaretDownFill />
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className={down === 91 ? "" : "hide"}>
+                  <IntergartionsMaster />
+                </div>
               </li>
             </ul>
           </div>

@@ -1,18 +1,4 @@
 import React, { useState } from "react";
-import yog_logo from "../../Images/yog_logo.png";
-import { FiSearch } from "react-icons/fi";
-import { HiUserAdd } from "react-icons/hi";
-import { FaSwatchbook } from "react-icons/fa";
-import {
-  BsCalendarEvent,
-  BsFilePostFill,
-  BsCalendarCheck,
-} from "react-icons/bs";
-import { ImTelegram } from "react-icons/im";
-import { CgProfile } from "react-icons/cg";
-import { TbBrandBooking } from "react-icons/tb";
-import { RiSpeedLine } from "react-icons/ri";
-import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import Navbar from "../Layout/Navbar";
 const Dtask = [
@@ -85,8 +71,6 @@ const Dtask = [
 ];
 const PTDashboard = () => {
   const [action, setAction] = useState("Birthday");
-  const [value, onChange] = useState(new Date());
-  const [openCal, setCal] = useState(false);
   return (
     <>
       <Navbar />
@@ -109,8 +93,8 @@ const PTDashboard = () => {
                   >
                     <div style={{ fontSize: "15px" }}>From</div>
                     <div className="btn-group">
-                <input type="date" className="btn btn-own" />
-              </div>
+                      <input type="date" className="btn btn-own" />
+                    </div>
                   </div>
 
                   <div>

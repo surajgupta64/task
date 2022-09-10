@@ -1,0 +1,52 @@
+.toggle {
+  height: 30px;
+  width: 60px;
+  border-radius: 50px;
+  margin: auto;
+  background-image: linear-gradient(rgb(246, 35, 35), rgb(236, 112, 112));
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle.night {
+  background-image: linear-gradient(rgb(41, 211, 49), rgb(62, 213, 115));
+}
+
+.notch {
+  height: 21px;
+  width: 21px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  box-shadow: 0 0 10px rgb(70, 70, 64);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.night .crater {
+  opacity: 0.4;
+}
+
+.crater:first-child {
+  left: 5px;
+  top: 15px;
+  height: 15px;
+  width: 40px;
+  transform: rotate(-45deg);
+}
+
+.crater:last-child {
+  right: 10px;
+  top: 15px;
+  height: 15px;
+  width: 25px;
+  transform: rotate(45deg);
+}
+
+.night > .notch {
+  background: whitesmoke;
+  box-shadow: 0 0 5px whitesmoke;
+  transform: translate(30px, 0);
+}
