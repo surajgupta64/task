@@ -25,6 +25,73 @@ const FitnessProfile = () => {
     <>
       <div className="dbox-10 " style={{ marginBottom: "20px" }}>
         <div className="row">
+          <div
+            className="title"
+            style={{
+              fontSize: "18px",
+              fontWeight: "bold",
+              marginLeft: "63px",
+            }}
+          >
+            Injuries and conditions
+          </div>
+          <div className="col-lg-12">
+            <div className="d-flex mt-3" style={{ gap: "30px" }}>
+              <div className="btn-group">
+                <label style={{ marginLeft: "20px" }}>
+                  <input type="checkbox" value="All Members" />
+                  <span> Asthma/COPD </span>
+                </label>
+                <label style={{ marginLeft: "20px" }}>
+                  <input type="checkbox" value="All Members" />
+                  <span> Back Pain </span>
+                </label>
+                <label style={{ marginLeft: "20px" }}>
+                  <input type="checkbox" value="All Members" />
+                  <span> Bone Fracture </span>
+                </label>
+                <label style={{ marginLeft: "20px" }}>
+                  <input type="checkbox" value="All Members" />
+                  <span> Carpal Tunnel </span>
+                </label>
+                <label style={{ marginLeft: "20px" }}>
+                  <input type="checkbox" value="All Members" />
+                  <span> Diabetes </span>
+                </label>
+                <label style={{ marginLeft: "20px" }}>
+                  <input type="checkbox" value="All Members" />
+                  <span> Digestive Disorder </span>
+                </label>
+                <label style={{ marginLeft: "20px" }}>
+                  <input type="checkbox" value="All Members" />
+                  <span> Epilepsy </span>
+                </label>
+                <label style={{ marginLeft: "20px" }}>
+                  <input type="checkbox" value="All Members" />
+                  <span> Foot Pain </span>
+                </label>
+                <label style={{ marginLeft: "20px" }}>
+                  <input type="checkbox" value="All Members" />
+                  <span> Glaucoma </span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-12">
+            <div className="d-flex mt-3" style={{ gap: "30px" }}>
+              <div className="btn-group">
+                <label style={{ marginLeft: "20px" }}>
+                  <input type="checkbox" value="All Members" />
+                  <span> Heart Disease/Condition </span>
+                </label>
+                <label style={{ marginLeft: "20px" }}>
+                  <input type="checkbox" value="All Members" />
+                  <span> Hernia/Diastasis Recti </span>
+                </label>
+              </div>
+            </div>
+          </div>
           <div className="col-lg-6">
             <div
               className="title"
