@@ -174,14 +174,14 @@ const EnquiryForm = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-4">
+                <div className="col-lg-4 mt-2">
                   <div className="d-flex right" style={{ gap: "30px" }}>
                     <div className="mr-3 ">Area:</div>
                   </div>
                 </div>
-                <div className="col-lg-8">
+                <div className="col-lg-8 mt-2">
                   <div className="d-flex" style={{ gap: "30px" }}>
-                    <div className="btn-group">
+                    <div className="btn-group ">
                       <input
                         type="text"
                         className="btn btn-own"
@@ -191,12 +191,12 @@ const EnquiryForm = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-4">
+                <div className="col-lg-4 mt-2">
                   <div className="d-flex right" style={{ gap: "30px" }}>
                     <div className="mr-3 ">City:</div>
                   </div>
                 </div>
-                <div className="col-lg-8">
+                <div className="col-lg-8 mt-2">
                   <div className="d-flex" style={{ gap: "30px" }}>
                     <div className="btn-group">
                       <input
@@ -208,12 +208,12 @@ const EnquiryForm = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-4">
+                <div className="col-lg-4 mt-2">
                   <div className="d-flex right" style={{ gap: "30px" }}>
                     <div className="mr-3 ">Profession:</div>
                   </div>
                 </div>
-                <div className="col-lg-8">
+                <div className="col-lg-8 mt-2">
                   <div className="d-flex" style={{ gap: "30px" }}>
                     <div className="btn-group">
                       <input
@@ -226,7 +226,7 @@ const EnquiryForm = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 mt-2">
               <div
                 className="title"
                 style={{
@@ -238,12 +238,12 @@ const EnquiryForm = () => {
                 Emergency contact
               </div>
               <div className="row">
-                <div className="col-lg-4">
+                <div className="col-lg-4 mt-2">
                   <div className="d-flex right" style={{ gap: "30px" }}>
                     <div className="mr-3 ">Name:</div>
                   </div>
                 </div>
-                <div className="col-lg-8">
+                <div className="col-lg-8 mt-2">
                   <div className="d-flex" style={{ gap: "30px" }}>
                     <div className="btn-group">
                       <input
@@ -254,7 +254,7 @@ const EnquiryForm = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 mt-2">
                   <div className="d-flex right" style={{ gap: "30px" }}>
                     <div className="mr-3">Country Code:</div>
                   </div>
@@ -297,12 +297,12 @@ const EnquiryForm = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 mt-2">
                   <div className="d-flex right" style={{ gap: "30px" }}>
                     <div className="mr-3 ">Contact Number:</div>
                   </div>
                 </div>
-                <div className="col-lg-8">
+                <div className="col-lg-8 mt-2">
                   <div className="d-flex" style={{ gap: "30px" }}>
                     <div className="btn-group">
                       <input
@@ -313,12 +313,12 @@ const EnquiryForm = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 mt-2">
                   <div className="d-flex right" style={{ gap: "30px" }}>
                     <div className="mr-3 ">Relationship:</div>
                   </div>
                 </div>
-                <div className="col-lg-8">
+                <div className="col-lg-8 mt-2">
                   <div className="d-flex" style={{ gap: "30px" }}>
                     <div className="btn-group">
                       <input
